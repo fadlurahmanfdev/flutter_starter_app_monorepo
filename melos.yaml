@@ -1,0 +1,16 @@
+name: flutter_monorepo
+
+packages:
+  - apps/app
+  - packages/core/**
+  - packages/app/**
+
+scripts:
+  corePubGet:
+    run: melos exec --concurrency 3 --scope="core_crypto" --scope="core_config" "flutter clean && flutter pub get"
+  appPackagesPubGet:
+    run: melos exec --concurrency 3 --scope="app_*" "flutter clean && flutter pub get"
+  appPackagesGenResp:
+    run: melos exec --concurrency 3 --scope="app_example" "flutter pub run build_runner build --delete-conflicting-outputs"
+  appPubGet:
+    run: melos exec --scope="app" "flutter clean && flutter pub get"
