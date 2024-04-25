@@ -24,6 +24,8 @@ mixin _$ExampleCryptoEvent {
     required TResult Function() generateRSAKey,
     required TResult Function() encryptRSA,
     required TResult Function() decryptRSA,
+    required TResult Function() encryptRSACombinedWithAES,
+    required TResult Function() decryptRSACombinedWithAES,
     required TResult Function() generateRSASignature,
     required TResult Function() verifyRSASignature,
     required TResult Function() generateED25519Key,
@@ -39,6 +41,8 @@ mixin _$ExampleCryptoEvent {
     TResult? Function()? generateRSAKey,
     TResult? Function()? encryptRSA,
     TResult? Function()? decryptRSA,
+    TResult? Function()? encryptRSACombinedWithAES,
+    TResult? Function()? decryptRSACombinedWithAES,
     TResult? Function()? generateRSASignature,
     TResult? Function()? verifyRSASignature,
     TResult? Function()? generateED25519Key,
@@ -54,6 +58,8 @@ mixin _$ExampleCryptoEvent {
     TResult Function()? generateRSAKey,
     TResult Function()? encryptRSA,
     TResult Function()? decryptRSA,
+    TResult Function()? encryptRSACombinedWithAES,
+    TResult Function()? decryptRSACombinedWithAES,
     TResult Function()? generateRSASignature,
     TResult Function()? verifyRSASignature,
     TResult Function()? generateED25519Key,
@@ -70,6 +76,10 @@ mixin _$ExampleCryptoEvent {
     required TResult Function(_GenerateRSAKey value) generateRSAKey,
     required TResult Function(_EncryptRSA value) encryptRSA,
     required TResult Function(_DecryptRSA value) decryptRSA,
+    required TResult Function(_EncryptRSACombinedWithAES value)
+        encryptRSACombinedWithAES,
+    required TResult Function(_DecryptRSACombinedWithAES value)
+        decryptRSACombinedWithAES,
     required TResult Function(_GenerateRSASignature value) generateRSASignature,
     required TResult Function(_VerifyRSASignature value) verifyRSASignature,
     required TResult Function(_GenerateED25519Key value) generateED25519Key,
@@ -87,6 +97,10 @@ mixin _$ExampleCryptoEvent {
     TResult? Function(_GenerateRSAKey value)? generateRSAKey,
     TResult? Function(_EncryptRSA value)? encryptRSA,
     TResult? Function(_DecryptRSA value)? decryptRSA,
+    TResult? Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult? Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
     TResult? Function(_GenerateRSASignature value)? generateRSASignature,
     TResult? Function(_VerifyRSASignature value)? verifyRSASignature,
     TResult? Function(_GenerateED25519Key value)? generateED25519Key,
@@ -103,6 +117,10 @@ mixin _$ExampleCryptoEvent {
     TResult Function(_GenerateRSAKey value)? generateRSAKey,
     TResult Function(_EncryptRSA value)? encryptRSA,
     TResult Function(_DecryptRSA value)? decryptRSA,
+    TResult Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
     TResult Function(_GenerateRSASignature value)? generateRSASignature,
     TResult Function(_VerifyRSASignature value)? verifyRSASignature,
     TResult Function(_GenerateED25519Key value)? generateED25519Key,
@@ -175,6 +193,8 @@ class _$GenerateAESKeyImpl implements _GenerateAESKey {
     required TResult Function() generateRSAKey,
     required TResult Function() encryptRSA,
     required TResult Function() decryptRSA,
+    required TResult Function() encryptRSACombinedWithAES,
+    required TResult Function() decryptRSACombinedWithAES,
     required TResult Function() generateRSASignature,
     required TResult Function() verifyRSASignature,
     required TResult Function() generateED25519Key,
@@ -193,6 +213,8 @@ class _$GenerateAESKeyImpl implements _GenerateAESKey {
     TResult? Function()? generateRSAKey,
     TResult? Function()? encryptRSA,
     TResult? Function()? decryptRSA,
+    TResult? Function()? encryptRSACombinedWithAES,
+    TResult? Function()? decryptRSACombinedWithAES,
     TResult? Function()? generateRSASignature,
     TResult? Function()? verifyRSASignature,
     TResult? Function()? generateED25519Key,
@@ -211,6 +233,8 @@ class _$GenerateAESKeyImpl implements _GenerateAESKey {
     TResult Function()? generateRSAKey,
     TResult Function()? encryptRSA,
     TResult Function()? decryptRSA,
+    TResult Function()? encryptRSACombinedWithAES,
+    TResult Function()? decryptRSACombinedWithAES,
     TResult Function()? generateRSASignature,
     TResult Function()? verifyRSASignature,
     TResult Function()? generateED25519Key,
@@ -233,6 +257,10 @@ class _$GenerateAESKeyImpl implements _GenerateAESKey {
     required TResult Function(_GenerateRSAKey value) generateRSAKey,
     required TResult Function(_EncryptRSA value) encryptRSA,
     required TResult Function(_DecryptRSA value) decryptRSA,
+    required TResult Function(_EncryptRSACombinedWithAES value)
+        encryptRSACombinedWithAES,
+    required TResult Function(_DecryptRSACombinedWithAES value)
+        decryptRSACombinedWithAES,
     required TResult Function(_GenerateRSASignature value) generateRSASignature,
     required TResult Function(_VerifyRSASignature value) verifyRSASignature,
     required TResult Function(_GenerateED25519Key value) generateED25519Key,
@@ -253,6 +281,10 @@ class _$GenerateAESKeyImpl implements _GenerateAESKey {
     TResult? Function(_GenerateRSAKey value)? generateRSAKey,
     TResult? Function(_EncryptRSA value)? encryptRSA,
     TResult? Function(_DecryptRSA value)? decryptRSA,
+    TResult? Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult? Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
     TResult? Function(_GenerateRSASignature value)? generateRSASignature,
     TResult? Function(_VerifyRSASignature value)? verifyRSASignature,
     TResult? Function(_GenerateED25519Key value)? generateED25519Key,
@@ -272,6 +304,10 @@ class _$GenerateAESKeyImpl implements _GenerateAESKey {
     TResult Function(_GenerateRSAKey value)? generateRSAKey,
     TResult Function(_EncryptRSA value)? encryptRSA,
     TResult Function(_DecryptRSA value)? decryptRSA,
+    TResult Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
     TResult Function(_GenerateRSASignature value)? generateRSASignature,
     TResult Function(_VerifyRSASignature value)? verifyRSASignature,
     TResult Function(_GenerateED25519Key value)? generateED25519Key,
@@ -334,6 +370,8 @@ class _$EncryptAESImpl implements _EncryptAES {
     required TResult Function() generateRSAKey,
     required TResult Function() encryptRSA,
     required TResult Function() decryptRSA,
+    required TResult Function() encryptRSACombinedWithAES,
+    required TResult Function() decryptRSACombinedWithAES,
     required TResult Function() generateRSASignature,
     required TResult Function() verifyRSASignature,
     required TResult Function() generateED25519Key,
@@ -352,6 +390,8 @@ class _$EncryptAESImpl implements _EncryptAES {
     TResult? Function()? generateRSAKey,
     TResult? Function()? encryptRSA,
     TResult? Function()? decryptRSA,
+    TResult? Function()? encryptRSACombinedWithAES,
+    TResult? Function()? decryptRSACombinedWithAES,
     TResult? Function()? generateRSASignature,
     TResult? Function()? verifyRSASignature,
     TResult? Function()? generateED25519Key,
@@ -370,6 +410,8 @@ class _$EncryptAESImpl implements _EncryptAES {
     TResult Function()? generateRSAKey,
     TResult Function()? encryptRSA,
     TResult Function()? decryptRSA,
+    TResult Function()? encryptRSACombinedWithAES,
+    TResult Function()? decryptRSACombinedWithAES,
     TResult Function()? generateRSASignature,
     TResult Function()? verifyRSASignature,
     TResult Function()? generateED25519Key,
@@ -392,6 +434,10 @@ class _$EncryptAESImpl implements _EncryptAES {
     required TResult Function(_GenerateRSAKey value) generateRSAKey,
     required TResult Function(_EncryptRSA value) encryptRSA,
     required TResult Function(_DecryptRSA value) decryptRSA,
+    required TResult Function(_EncryptRSACombinedWithAES value)
+        encryptRSACombinedWithAES,
+    required TResult Function(_DecryptRSACombinedWithAES value)
+        decryptRSACombinedWithAES,
     required TResult Function(_GenerateRSASignature value) generateRSASignature,
     required TResult Function(_VerifyRSASignature value) verifyRSASignature,
     required TResult Function(_GenerateED25519Key value) generateED25519Key,
@@ -412,6 +458,10 @@ class _$EncryptAESImpl implements _EncryptAES {
     TResult? Function(_GenerateRSAKey value)? generateRSAKey,
     TResult? Function(_EncryptRSA value)? encryptRSA,
     TResult? Function(_DecryptRSA value)? decryptRSA,
+    TResult? Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult? Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
     TResult? Function(_GenerateRSASignature value)? generateRSASignature,
     TResult? Function(_VerifyRSASignature value)? verifyRSASignature,
     TResult? Function(_GenerateED25519Key value)? generateED25519Key,
@@ -431,6 +481,10 @@ class _$EncryptAESImpl implements _EncryptAES {
     TResult Function(_GenerateRSAKey value)? generateRSAKey,
     TResult Function(_EncryptRSA value)? encryptRSA,
     TResult Function(_DecryptRSA value)? decryptRSA,
+    TResult Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
     TResult Function(_GenerateRSASignature value)? generateRSASignature,
     TResult Function(_VerifyRSASignature value)? verifyRSASignature,
     TResult Function(_GenerateED25519Key value)? generateED25519Key,
@@ -493,6 +547,8 @@ class _$DecryptAESImpl implements _DecryptAES {
     required TResult Function() generateRSAKey,
     required TResult Function() encryptRSA,
     required TResult Function() decryptRSA,
+    required TResult Function() encryptRSACombinedWithAES,
+    required TResult Function() decryptRSACombinedWithAES,
     required TResult Function() generateRSASignature,
     required TResult Function() verifyRSASignature,
     required TResult Function() generateED25519Key,
@@ -511,6 +567,8 @@ class _$DecryptAESImpl implements _DecryptAES {
     TResult? Function()? generateRSAKey,
     TResult? Function()? encryptRSA,
     TResult? Function()? decryptRSA,
+    TResult? Function()? encryptRSACombinedWithAES,
+    TResult? Function()? decryptRSACombinedWithAES,
     TResult? Function()? generateRSASignature,
     TResult? Function()? verifyRSASignature,
     TResult? Function()? generateED25519Key,
@@ -529,6 +587,8 @@ class _$DecryptAESImpl implements _DecryptAES {
     TResult Function()? generateRSAKey,
     TResult Function()? encryptRSA,
     TResult Function()? decryptRSA,
+    TResult Function()? encryptRSACombinedWithAES,
+    TResult Function()? decryptRSACombinedWithAES,
     TResult Function()? generateRSASignature,
     TResult Function()? verifyRSASignature,
     TResult Function()? generateED25519Key,
@@ -551,6 +611,10 @@ class _$DecryptAESImpl implements _DecryptAES {
     required TResult Function(_GenerateRSAKey value) generateRSAKey,
     required TResult Function(_EncryptRSA value) encryptRSA,
     required TResult Function(_DecryptRSA value) decryptRSA,
+    required TResult Function(_EncryptRSACombinedWithAES value)
+        encryptRSACombinedWithAES,
+    required TResult Function(_DecryptRSACombinedWithAES value)
+        decryptRSACombinedWithAES,
     required TResult Function(_GenerateRSASignature value) generateRSASignature,
     required TResult Function(_VerifyRSASignature value) verifyRSASignature,
     required TResult Function(_GenerateED25519Key value) generateED25519Key,
@@ -571,6 +635,10 @@ class _$DecryptAESImpl implements _DecryptAES {
     TResult? Function(_GenerateRSAKey value)? generateRSAKey,
     TResult? Function(_EncryptRSA value)? encryptRSA,
     TResult? Function(_DecryptRSA value)? decryptRSA,
+    TResult? Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult? Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
     TResult? Function(_GenerateRSASignature value)? generateRSASignature,
     TResult? Function(_VerifyRSASignature value)? verifyRSASignature,
     TResult? Function(_GenerateED25519Key value)? generateED25519Key,
@@ -590,6 +658,10 @@ class _$DecryptAESImpl implements _DecryptAES {
     TResult Function(_GenerateRSAKey value)? generateRSAKey,
     TResult Function(_EncryptRSA value)? encryptRSA,
     TResult Function(_DecryptRSA value)? decryptRSA,
+    TResult Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
     TResult Function(_GenerateRSASignature value)? generateRSASignature,
     TResult Function(_VerifyRSASignature value)? verifyRSASignature,
     TResult Function(_GenerateED25519Key value)? generateED25519Key,
@@ -652,6 +724,8 @@ class _$GenerateRSAKeyImpl implements _GenerateRSAKey {
     required TResult Function() generateRSAKey,
     required TResult Function() encryptRSA,
     required TResult Function() decryptRSA,
+    required TResult Function() encryptRSACombinedWithAES,
+    required TResult Function() decryptRSACombinedWithAES,
     required TResult Function() generateRSASignature,
     required TResult Function() verifyRSASignature,
     required TResult Function() generateED25519Key,
@@ -670,6 +744,8 @@ class _$GenerateRSAKeyImpl implements _GenerateRSAKey {
     TResult? Function()? generateRSAKey,
     TResult? Function()? encryptRSA,
     TResult? Function()? decryptRSA,
+    TResult? Function()? encryptRSACombinedWithAES,
+    TResult? Function()? decryptRSACombinedWithAES,
     TResult? Function()? generateRSASignature,
     TResult? Function()? verifyRSASignature,
     TResult? Function()? generateED25519Key,
@@ -688,6 +764,8 @@ class _$GenerateRSAKeyImpl implements _GenerateRSAKey {
     TResult Function()? generateRSAKey,
     TResult Function()? encryptRSA,
     TResult Function()? decryptRSA,
+    TResult Function()? encryptRSACombinedWithAES,
+    TResult Function()? decryptRSACombinedWithAES,
     TResult Function()? generateRSASignature,
     TResult Function()? verifyRSASignature,
     TResult Function()? generateED25519Key,
@@ -710,6 +788,10 @@ class _$GenerateRSAKeyImpl implements _GenerateRSAKey {
     required TResult Function(_GenerateRSAKey value) generateRSAKey,
     required TResult Function(_EncryptRSA value) encryptRSA,
     required TResult Function(_DecryptRSA value) decryptRSA,
+    required TResult Function(_EncryptRSACombinedWithAES value)
+        encryptRSACombinedWithAES,
+    required TResult Function(_DecryptRSACombinedWithAES value)
+        decryptRSACombinedWithAES,
     required TResult Function(_GenerateRSASignature value) generateRSASignature,
     required TResult Function(_VerifyRSASignature value) verifyRSASignature,
     required TResult Function(_GenerateED25519Key value) generateED25519Key,
@@ -730,6 +812,10 @@ class _$GenerateRSAKeyImpl implements _GenerateRSAKey {
     TResult? Function(_GenerateRSAKey value)? generateRSAKey,
     TResult? Function(_EncryptRSA value)? encryptRSA,
     TResult? Function(_DecryptRSA value)? decryptRSA,
+    TResult? Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult? Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
     TResult? Function(_GenerateRSASignature value)? generateRSASignature,
     TResult? Function(_VerifyRSASignature value)? verifyRSASignature,
     TResult? Function(_GenerateED25519Key value)? generateED25519Key,
@@ -749,6 +835,10 @@ class _$GenerateRSAKeyImpl implements _GenerateRSAKey {
     TResult Function(_GenerateRSAKey value)? generateRSAKey,
     TResult Function(_EncryptRSA value)? encryptRSA,
     TResult Function(_DecryptRSA value)? decryptRSA,
+    TResult Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
     TResult Function(_GenerateRSASignature value)? generateRSASignature,
     TResult Function(_VerifyRSASignature value)? verifyRSASignature,
     TResult Function(_GenerateED25519Key value)? generateED25519Key,
@@ -811,6 +901,8 @@ class _$EncryptRSAImpl implements _EncryptRSA {
     required TResult Function() generateRSAKey,
     required TResult Function() encryptRSA,
     required TResult Function() decryptRSA,
+    required TResult Function() encryptRSACombinedWithAES,
+    required TResult Function() decryptRSACombinedWithAES,
     required TResult Function() generateRSASignature,
     required TResult Function() verifyRSASignature,
     required TResult Function() generateED25519Key,
@@ -829,6 +921,8 @@ class _$EncryptRSAImpl implements _EncryptRSA {
     TResult? Function()? generateRSAKey,
     TResult? Function()? encryptRSA,
     TResult? Function()? decryptRSA,
+    TResult? Function()? encryptRSACombinedWithAES,
+    TResult? Function()? decryptRSACombinedWithAES,
     TResult? Function()? generateRSASignature,
     TResult? Function()? verifyRSASignature,
     TResult? Function()? generateED25519Key,
@@ -847,6 +941,8 @@ class _$EncryptRSAImpl implements _EncryptRSA {
     TResult Function()? generateRSAKey,
     TResult Function()? encryptRSA,
     TResult Function()? decryptRSA,
+    TResult Function()? encryptRSACombinedWithAES,
+    TResult Function()? decryptRSACombinedWithAES,
     TResult Function()? generateRSASignature,
     TResult Function()? verifyRSASignature,
     TResult Function()? generateED25519Key,
@@ -869,6 +965,10 @@ class _$EncryptRSAImpl implements _EncryptRSA {
     required TResult Function(_GenerateRSAKey value) generateRSAKey,
     required TResult Function(_EncryptRSA value) encryptRSA,
     required TResult Function(_DecryptRSA value) decryptRSA,
+    required TResult Function(_EncryptRSACombinedWithAES value)
+        encryptRSACombinedWithAES,
+    required TResult Function(_DecryptRSACombinedWithAES value)
+        decryptRSACombinedWithAES,
     required TResult Function(_GenerateRSASignature value) generateRSASignature,
     required TResult Function(_VerifyRSASignature value) verifyRSASignature,
     required TResult Function(_GenerateED25519Key value) generateED25519Key,
@@ -889,6 +989,10 @@ class _$EncryptRSAImpl implements _EncryptRSA {
     TResult? Function(_GenerateRSAKey value)? generateRSAKey,
     TResult? Function(_EncryptRSA value)? encryptRSA,
     TResult? Function(_DecryptRSA value)? decryptRSA,
+    TResult? Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult? Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
     TResult? Function(_GenerateRSASignature value)? generateRSASignature,
     TResult? Function(_VerifyRSASignature value)? verifyRSASignature,
     TResult? Function(_GenerateED25519Key value)? generateED25519Key,
@@ -908,6 +1012,10 @@ class _$EncryptRSAImpl implements _EncryptRSA {
     TResult Function(_GenerateRSAKey value)? generateRSAKey,
     TResult Function(_EncryptRSA value)? encryptRSA,
     TResult Function(_DecryptRSA value)? decryptRSA,
+    TResult Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
     TResult Function(_GenerateRSASignature value)? generateRSASignature,
     TResult Function(_VerifyRSASignature value)? verifyRSASignature,
     TResult Function(_GenerateED25519Key value)? generateED25519Key,
@@ -970,6 +1078,8 @@ class _$DecryptRSAImpl implements _DecryptRSA {
     required TResult Function() generateRSAKey,
     required TResult Function() encryptRSA,
     required TResult Function() decryptRSA,
+    required TResult Function() encryptRSACombinedWithAES,
+    required TResult Function() decryptRSACombinedWithAES,
     required TResult Function() generateRSASignature,
     required TResult Function() verifyRSASignature,
     required TResult Function() generateED25519Key,
@@ -988,6 +1098,8 @@ class _$DecryptRSAImpl implements _DecryptRSA {
     TResult? Function()? generateRSAKey,
     TResult? Function()? encryptRSA,
     TResult? Function()? decryptRSA,
+    TResult? Function()? encryptRSACombinedWithAES,
+    TResult? Function()? decryptRSACombinedWithAES,
     TResult? Function()? generateRSASignature,
     TResult? Function()? verifyRSASignature,
     TResult? Function()? generateED25519Key,
@@ -1006,6 +1118,8 @@ class _$DecryptRSAImpl implements _DecryptRSA {
     TResult Function()? generateRSAKey,
     TResult Function()? encryptRSA,
     TResult Function()? decryptRSA,
+    TResult Function()? encryptRSACombinedWithAES,
+    TResult Function()? decryptRSACombinedWithAES,
     TResult Function()? generateRSASignature,
     TResult Function()? verifyRSASignature,
     TResult Function()? generateED25519Key,
@@ -1028,6 +1142,10 @@ class _$DecryptRSAImpl implements _DecryptRSA {
     required TResult Function(_GenerateRSAKey value) generateRSAKey,
     required TResult Function(_EncryptRSA value) encryptRSA,
     required TResult Function(_DecryptRSA value) decryptRSA,
+    required TResult Function(_EncryptRSACombinedWithAES value)
+        encryptRSACombinedWithAES,
+    required TResult Function(_DecryptRSACombinedWithAES value)
+        decryptRSACombinedWithAES,
     required TResult Function(_GenerateRSASignature value) generateRSASignature,
     required TResult Function(_VerifyRSASignature value) verifyRSASignature,
     required TResult Function(_GenerateED25519Key value) generateED25519Key,
@@ -1048,6 +1166,10 @@ class _$DecryptRSAImpl implements _DecryptRSA {
     TResult? Function(_GenerateRSAKey value)? generateRSAKey,
     TResult? Function(_EncryptRSA value)? encryptRSA,
     TResult? Function(_DecryptRSA value)? decryptRSA,
+    TResult? Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult? Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
     TResult? Function(_GenerateRSASignature value)? generateRSASignature,
     TResult? Function(_VerifyRSASignature value)? verifyRSASignature,
     TResult? Function(_GenerateED25519Key value)? generateED25519Key,
@@ -1067,6 +1189,10 @@ class _$DecryptRSAImpl implements _DecryptRSA {
     TResult Function(_GenerateRSAKey value)? generateRSAKey,
     TResult Function(_EncryptRSA value)? encryptRSA,
     TResult Function(_DecryptRSA value)? decryptRSA,
+    TResult Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
     TResult Function(_GenerateRSASignature value)? generateRSASignature,
     TResult Function(_VerifyRSASignature value)? verifyRSASignature,
     TResult Function(_GenerateED25519Key value)? generateED25519Key,
@@ -1083,6 +1209,368 @@ class _$DecryptRSAImpl implements _DecryptRSA {
 
 abstract class _DecryptRSA implements ExampleCryptoEvent {
   const factory _DecryptRSA() = _$DecryptRSAImpl;
+}
+
+/// @nodoc
+abstract class _$$EncryptRSACombinedWithAESImplCopyWith<$Res> {
+  factory _$$EncryptRSACombinedWithAESImplCopyWith(
+          _$EncryptRSACombinedWithAESImpl value,
+          $Res Function(_$EncryptRSACombinedWithAESImpl) then) =
+      __$$EncryptRSACombinedWithAESImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$EncryptRSACombinedWithAESImplCopyWithImpl<$Res>
+    extends _$ExampleCryptoEventCopyWithImpl<$Res,
+        _$EncryptRSACombinedWithAESImpl>
+    implements _$$EncryptRSACombinedWithAESImplCopyWith<$Res> {
+  __$$EncryptRSACombinedWithAESImplCopyWithImpl(
+      _$EncryptRSACombinedWithAESImpl _value,
+      $Res Function(_$EncryptRSACombinedWithAESImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$EncryptRSACombinedWithAESImpl implements _EncryptRSACombinedWithAES {
+  const _$EncryptRSACombinedWithAESImpl();
+
+  @override
+  String toString() {
+    return 'ExampleCryptoEvent.encryptRSACombinedWithAES()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$EncryptRSACombinedWithAESImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() generateAESKey,
+    required TResult Function() encryptAES,
+    required TResult Function() decryptAES,
+    required TResult Function() generateRSAKey,
+    required TResult Function() encryptRSA,
+    required TResult Function() decryptRSA,
+    required TResult Function() encryptRSACombinedWithAES,
+    required TResult Function() decryptRSACombinedWithAES,
+    required TResult Function() generateRSASignature,
+    required TResult Function() verifyRSASignature,
+    required TResult Function() generateED25519Key,
+    required TResult Function() generateED25519Signature,
+    required TResult Function() verifyED25519Signature,
+  }) {
+    return encryptRSACombinedWithAES();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? generateAESKey,
+    TResult? Function()? encryptAES,
+    TResult? Function()? decryptAES,
+    TResult? Function()? generateRSAKey,
+    TResult? Function()? encryptRSA,
+    TResult? Function()? decryptRSA,
+    TResult? Function()? encryptRSACombinedWithAES,
+    TResult? Function()? decryptRSACombinedWithAES,
+    TResult? Function()? generateRSASignature,
+    TResult? Function()? verifyRSASignature,
+    TResult? Function()? generateED25519Key,
+    TResult? Function()? generateED25519Signature,
+    TResult? Function()? verifyED25519Signature,
+  }) {
+    return encryptRSACombinedWithAES?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? generateAESKey,
+    TResult Function()? encryptAES,
+    TResult Function()? decryptAES,
+    TResult Function()? generateRSAKey,
+    TResult Function()? encryptRSA,
+    TResult Function()? decryptRSA,
+    TResult Function()? encryptRSACombinedWithAES,
+    TResult Function()? decryptRSACombinedWithAES,
+    TResult Function()? generateRSASignature,
+    TResult Function()? verifyRSASignature,
+    TResult Function()? generateED25519Key,
+    TResult Function()? generateED25519Signature,
+    TResult Function()? verifyED25519Signature,
+    required TResult orElse(),
+  }) {
+    if (encryptRSACombinedWithAES != null) {
+      return encryptRSACombinedWithAES();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_GenerateAESKey value) generateAESKey,
+    required TResult Function(_EncryptAES value) encryptAES,
+    required TResult Function(_DecryptAES value) decryptAES,
+    required TResult Function(_GenerateRSAKey value) generateRSAKey,
+    required TResult Function(_EncryptRSA value) encryptRSA,
+    required TResult Function(_DecryptRSA value) decryptRSA,
+    required TResult Function(_EncryptRSACombinedWithAES value)
+        encryptRSACombinedWithAES,
+    required TResult Function(_DecryptRSACombinedWithAES value)
+        decryptRSACombinedWithAES,
+    required TResult Function(_GenerateRSASignature value) generateRSASignature,
+    required TResult Function(_VerifyRSASignature value) verifyRSASignature,
+    required TResult Function(_GenerateED25519Key value) generateED25519Key,
+    required TResult Function(_GenerateED25519Signature value)
+        generateED25519Signature,
+    required TResult Function(_VerifyED25519Signature value)
+        verifyED25519Signature,
+  }) {
+    return encryptRSACombinedWithAES(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_GenerateAESKey value)? generateAESKey,
+    TResult? Function(_EncryptAES value)? encryptAES,
+    TResult? Function(_DecryptAES value)? decryptAES,
+    TResult? Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult? Function(_EncryptRSA value)? encryptRSA,
+    TResult? Function(_DecryptRSA value)? decryptRSA,
+    TResult? Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult? Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
+    TResult? Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult? Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult? Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult? Function(_GenerateED25519Signature value)?
+        generateED25519Signature,
+    TResult? Function(_VerifyED25519Signature value)? verifyED25519Signature,
+  }) {
+    return encryptRSACombinedWithAES?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_GenerateAESKey value)? generateAESKey,
+    TResult Function(_EncryptAES value)? encryptAES,
+    TResult Function(_DecryptAES value)? decryptAES,
+    TResult Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult Function(_EncryptRSA value)? encryptRSA,
+    TResult Function(_DecryptRSA value)? decryptRSA,
+    TResult Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
+    TResult Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult Function(_GenerateED25519Signature value)? generateED25519Signature,
+    TResult Function(_VerifyED25519Signature value)? verifyED25519Signature,
+    required TResult orElse(),
+  }) {
+    if (encryptRSACombinedWithAES != null) {
+      return encryptRSACombinedWithAES(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _EncryptRSACombinedWithAES implements ExampleCryptoEvent {
+  const factory _EncryptRSACombinedWithAES() = _$EncryptRSACombinedWithAESImpl;
+}
+
+/// @nodoc
+abstract class _$$DecryptRSACombinedWithAESImplCopyWith<$Res> {
+  factory _$$DecryptRSACombinedWithAESImplCopyWith(
+          _$DecryptRSACombinedWithAESImpl value,
+          $Res Function(_$DecryptRSACombinedWithAESImpl) then) =
+      __$$DecryptRSACombinedWithAESImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$DecryptRSACombinedWithAESImplCopyWithImpl<$Res>
+    extends _$ExampleCryptoEventCopyWithImpl<$Res,
+        _$DecryptRSACombinedWithAESImpl>
+    implements _$$DecryptRSACombinedWithAESImplCopyWith<$Res> {
+  __$$DecryptRSACombinedWithAESImplCopyWithImpl(
+      _$DecryptRSACombinedWithAESImpl _value,
+      $Res Function(_$DecryptRSACombinedWithAESImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$DecryptRSACombinedWithAESImpl implements _DecryptRSACombinedWithAES {
+  const _$DecryptRSACombinedWithAESImpl();
+
+  @override
+  String toString() {
+    return 'ExampleCryptoEvent.decryptRSACombinedWithAES()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$DecryptRSACombinedWithAESImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() generateAESKey,
+    required TResult Function() encryptAES,
+    required TResult Function() decryptAES,
+    required TResult Function() generateRSAKey,
+    required TResult Function() encryptRSA,
+    required TResult Function() decryptRSA,
+    required TResult Function() encryptRSACombinedWithAES,
+    required TResult Function() decryptRSACombinedWithAES,
+    required TResult Function() generateRSASignature,
+    required TResult Function() verifyRSASignature,
+    required TResult Function() generateED25519Key,
+    required TResult Function() generateED25519Signature,
+    required TResult Function() verifyED25519Signature,
+  }) {
+    return decryptRSACombinedWithAES();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? generateAESKey,
+    TResult? Function()? encryptAES,
+    TResult? Function()? decryptAES,
+    TResult? Function()? generateRSAKey,
+    TResult? Function()? encryptRSA,
+    TResult? Function()? decryptRSA,
+    TResult? Function()? encryptRSACombinedWithAES,
+    TResult? Function()? decryptRSACombinedWithAES,
+    TResult? Function()? generateRSASignature,
+    TResult? Function()? verifyRSASignature,
+    TResult? Function()? generateED25519Key,
+    TResult? Function()? generateED25519Signature,
+    TResult? Function()? verifyED25519Signature,
+  }) {
+    return decryptRSACombinedWithAES?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? generateAESKey,
+    TResult Function()? encryptAES,
+    TResult Function()? decryptAES,
+    TResult Function()? generateRSAKey,
+    TResult Function()? encryptRSA,
+    TResult Function()? decryptRSA,
+    TResult Function()? encryptRSACombinedWithAES,
+    TResult Function()? decryptRSACombinedWithAES,
+    TResult Function()? generateRSASignature,
+    TResult Function()? verifyRSASignature,
+    TResult Function()? generateED25519Key,
+    TResult Function()? generateED25519Signature,
+    TResult Function()? verifyED25519Signature,
+    required TResult orElse(),
+  }) {
+    if (decryptRSACombinedWithAES != null) {
+      return decryptRSACombinedWithAES();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_GenerateAESKey value) generateAESKey,
+    required TResult Function(_EncryptAES value) encryptAES,
+    required TResult Function(_DecryptAES value) decryptAES,
+    required TResult Function(_GenerateRSAKey value) generateRSAKey,
+    required TResult Function(_EncryptRSA value) encryptRSA,
+    required TResult Function(_DecryptRSA value) decryptRSA,
+    required TResult Function(_EncryptRSACombinedWithAES value)
+        encryptRSACombinedWithAES,
+    required TResult Function(_DecryptRSACombinedWithAES value)
+        decryptRSACombinedWithAES,
+    required TResult Function(_GenerateRSASignature value) generateRSASignature,
+    required TResult Function(_VerifyRSASignature value) verifyRSASignature,
+    required TResult Function(_GenerateED25519Key value) generateED25519Key,
+    required TResult Function(_GenerateED25519Signature value)
+        generateED25519Signature,
+    required TResult Function(_VerifyED25519Signature value)
+        verifyED25519Signature,
+  }) {
+    return decryptRSACombinedWithAES(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_GenerateAESKey value)? generateAESKey,
+    TResult? Function(_EncryptAES value)? encryptAES,
+    TResult? Function(_DecryptAES value)? decryptAES,
+    TResult? Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult? Function(_EncryptRSA value)? encryptRSA,
+    TResult? Function(_DecryptRSA value)? decryptRSA,
+    TResult? Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult? Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
+    TResult? Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult? Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult? Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult? Function(_GenerateED25519Signature value)?
+        generateED25519Signature,
+    TResult? Function(_VerifyED25519Signature value)? verifyED25519Signature,
+  }) {
+    return decryptRSACombinedWithAES?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_GenerateAESKey value)? generateAESKey,
+    TResult Function(_EncryptAES value)? encryptAES,
+    TResult Function(_DecryptAES value)? decryptAES,
+    TResult Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult Function(_EncryptRSA value)? encryptRSA,
+    TResult Function(_DecryptRSA value)? decryptRSA,
+    TResult Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
+    TResult Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult Function(_GenerateED25519Signature value)? generateED25519Signature,
+    TResult Function(_VerifyED25519Signature value)? verifyED25519Signature,
+    required TResult orElse(),
+  }) {
+    if (decryptRSACombinedWithAES != null) {
+      return decryptRSACombinedWithAES(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _DecryptRSACombinedWithAES implements ExampleCryptoEvent {
+  const factory _DecryptRSACombinedWithAES() = _$DecryptRSACombinedWithAESImpl;
 }
 
 /// @nodoc
@@ -1130,6 +1618,8 @@ class _$GenerateRSASignatureImpl implements _GenerateRSASignature {
     required TResult Function() generateRSAKey,
     required TResult Function() encryptRSA,
     required TResult Function() decryptRSA,
+    required TResult Function() encryptRSACombinedWithAES,
+    required TResult Function() decryptRSACombinedWithAES,
     required TResult Function() generateRSASignature,
     required TResult Function() verifyRSASignature,
     required TResult Function() generateED25519Key,
@@ -1148,6 +1638,8 @@ class _$GenerateRSASignatureImpl implements _GenerateRSASignature {
     TResult? Function()? generateRSAKey,
     TResult? Function()? encryptRSA,
     TResult? Function()? decryptRSA,
+    TResult? Function()? encryptRSACombinedWithAES,
+    TResult? Function()? decryptRSACombinedWithAES,
     TResult? Function()? generateRSASignature,
     TResult? Function()? verifyRSASignature,
     TResult? Function()? generateED25519Key,
@@ -1166,6 +1658,8 @@ class _$GenerateRSASignatureImpl implements _GenerateRSASignature {
     TResult Function()? generateRSAKey,
     TResult Function()? encryptRSA,
     TResult Function()? decryptRSA,
+    TResult Function()? encryptRSACombinedWithAES,
+    TResult Function()? decryptRSACombinedWithAES,
     TResult Function()? generateRSASignature,
     TResult Function()? verifyRSASignature,
     TResult Function()? generateED25519Key,
@@ -1188,6 +1682,10 @@ class _$GenerateRSASignatureImpl implements _GenerateRSASignature {
     required TResult Function(_GenerateRSAKey value) generateRSAKey,
     required TResult Function(_EncryptRSA value) encryptRSA,
     required TResult Function(_DecryptRSA value) decryptRSA,
+    required TResult Function(_EncryptRSACombinedWithAES value)
+        encryptRSACombinedWithAES,
+    required TResult Function(_DecryptRSACombinedWithAES value)
+        decryptRSACombinedWithAES,
     required TResult Function(_GenerateRSASignature value) generateRSASignature,
     required TResult Function(_VerifyRSASignature value) verifyRSASignature,
     required TResult Function(_GenerateED25519Key value) generateED25519Key,
@@ -1208,6 +1706,10 @@ class _$GenerateRSASignatureImpl implements _GenerateRSASignature {
     TResult? Function(_GenerateRSAKey value)? generateRSAKey,
     TResult? Function(_EncryptRSA value)? encryptRSA,
     TResult? Function(_DecryptRSA value)? decryptRSA,
+    TResult? Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult? Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
     TResult? Function(_GenerateRSASignature value)? generateRSASignature,
     TResult? Function(_VerifyRSASignature value)? verifyRSASignature,
     TResult? Function(_GenerateED25519Key value)? generateED25519Key,
@@ -1227,6 +1729,10 @@ class _$GenerateRSASignatureImpl implements _GenerateRSASignature {
     TResult Function(_GenerateRSAKey value)? generateRSAKey,
     TResult Function(_EncryptRSA value)? encryptRSA,
     TResult Function(_DecryptRSA value)? decryptRSA,
+    TResult Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
     TResult Function(_GenerateRSASignature value)? generateRSASignature,
     TResult Function(_VerifyRSASignature value)? verifyRSASignature,
     TResult Function(_GenerateED25519Key value)? generateED25519Key,
@@ -1289,6 +1795,8 @@ class _$VerifyRSASignatureImpl implements _VerifyRSASignature {
     required TResult Function() generateRSAKey,
     required TResult Function() encryptRSA,
     required TResult Function() decryptRSA,
+    required TResult Function() encryptRSACombinedWithAES,
+    required TResult Function() decryptRSACombinedWithAES,
     required TResult Function() generateRSASignature,
     required TResult Function() verifyRSASignature,
     required TResult Function() generateED25519Key,
@@ -1307,6 +1815,8 @@ class _$VerifyRSASignatureImpl implements _VerifyRSASignature {
     TResult? Function()? generateRSAKey,
     TResult? Function()? encryptRSA,
     TResult? Function()? decryptRSA,
+    TResult? Function()? encryptRSACombinedWithAES,
+    TResult? Function()? decryptRSACombinedWithAES,
     TResult? Function()? generateRSASignature,
     TResult? Function()? verifyRSASignature,
     TResult? Function()? generateED25519Key,
@@ -1325,6 +1835,8 @@ class _$VerifyRSASignatureImpl implements _VerifyRSASignature {
     TResult Function()? generateRSAKey,
     TResult Function()? encryptRSA,
     TResult Function()? decryptRSA,
+    TResult Function()? encryptRSACombinedWithAES,
+    TResult Function()? decryptRSACombinedWithAES,
     TResult Function()? generateRSASignature,
     TResult Function()? verifyRSASignature,
     TResult Function()? generateED25519Key,
@@ -1347,6 +1859,10 @@ class _$VerifyRSASignatureImpl implements _VerifyRSASignature {
     required TResult Function(_GenerateRSAKey value) generateRSAKey,
     required TResult Function(_EncryptRSA value) encryptRSA,
     required TResult Function(_DecryptRSA value) decryptRSA,
+    required TResult Function(_EncryptRSACombinedWithAES value)
+        encryptRSACombinedWithAES,
+    required TResult Function(_DecryptRSACombinedWithAES value)
+        decryptRSACombinedWithAES,
     required TResult Function(_GenerateRSASignature value) generateRSASignature,
     required TResult Function(_VerifyRSASignature value) verifyRSASignature,
     required TResult Function(_GenerateED25519Key value) generateED25519Key,
@@ -1367,6 +1883,10 @@ class _$VerifyRSASignatureImpl implements _VerifyRSASignature {
     TResult? Function(_GenerateRSAKey value)? generateRSAKey,
     TResult? Function(_EncryptRSA value)? encryptRSA,
     TResult? Function(_DecryptRSA value)? decryptRSA,
+    TResult? Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult? Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
     TResult? Function(_GenerateRSASignature value)? generateRSASignature,
     TResult? Function(_VerifyRSASignature value)? verifyRSASignature,
     TResult? Function(_GenerateED25519Key value)? generateED25519Key,
@@ -1386,6 +1906,10 @@ class _$VerifyRSASignatureImpl implements _VerifyRSASignature {
     TResult Function(_GenerateRSAKey value)? generateRSAKey,
     TResult Function(_EncryptRSA value)? encryptRSA,
     TResult Function(_DecryptRSA value)? decryptRSA,
+    TResult Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
     TResult Function(_GenerateRSASignature value)? generateRSASignature,
     TResult Function(_VerifyRSASignature value)? verifyRSASignature,
     TResult Function(_GenerateED25519Key value)? generateED25519Key,
@@ -1448,6 +1972,8 @@ class _$GenerateED25519KeyImpl implements _GenerateED25519Key {
     required TResult Function() generateRSAKey,
     required TResult Function() encryptRSA,
     required TResult Function() decryptRSA,
+    required TResult Function() encryptRSACombinedWithAES,
+    required TResult Function() decryptRSACombinedWithAES,
     required TResult Function() generateRSASignature,
     required TResult Function() verifyRSASignature,
     required TResult Function() generateED25519Key,
@@ -1466,6 +1992,8 @@ class _$GenerateED25519KeyImpl implements _GenerateED25519Key {
     TResult? Function()? generateRSAKey,
     TResult? Function()? encryptRSA,
     TResult? Function()? decryptRSA,
+    TResult? Function()? encryptRSACombinedWithAES,
+    TResult? Function()? decryptRSACombinedWithAES,
     TResult? Function()? generateRSASignature,
     TResult? Function()? verifyRSASignature,
     TResult? Function()? generateED25519Key,
@@ -1484,6 +2012,8 @@ class _$GenerateED25519KeyImpl implements _GenerateED25519Key {
     TResult Function()? generateRSAKey,
     TResult Function()? encryptRSA,
     TResult Function()? decryptRSA,
+    TResult Function()? encryptRSACombinedWithAES,
+    TResult Function()? decryptRSACombinedWithAES,
     TResult Function()? generateRSASignature,
     TResult Function()? verifyRSASignature,
     TResult Function()? generateED25519Key,
@@ -1506,6 +2036,10 @@ class _$GenerateED25519KeyImpl implements _GenerateED25519Key {
     required TResult Function(_GenerateRSAKey value) generateRSAKey,
     required TResult Function(_EncryptRSA value) encryptRSA,
     required TResult Function(_DecryptRSA value) decryptRSA,
+    required TResult Function(_EncryptRSACombinedWithAES value)
+        encryptRSACombinedWithAES,
+    required TResult Function(_DecryptRSACombinedWithAES value)
+        decryptRSACombinedWithAES,
     required TResult Function(_GenerateRSASignature value) generateRSASignature,
     required TResult Function(_VerifyRSASignature value) verifyRSASignature,
     required TResult Function(_GenerateED25519Key value) generateED25519Key,
@@ -1526,6 +2060,10 @@ class _$GenerateED25519KeyImpl implements _GenerateED25519Key {
     TResult? Function(_GenerateRSAKey value)? generateRSAKey,
     TResult? Function(_EncryptRSA value)? encryptRSA,
     TResult? Function(_DecryptRSA value)? decryptRSA,
+    TResult? Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult? Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
     TResult? Function(_GenerateRSASignature value)? generateRSASignature,
     TResult? Function(_VerifyRSASignature value)? verifyRSASignature,
     TResult? Function(_GenerateED25519Key value)? generateED25519Key,
@@ -1545,6 +2083,10 @@ class _$GenerateED25519KeyImpl implements _GenerateED25519Key {
     TResult Function(_GenerateRSAKey value)? generateRSAKey,
     TResult Function(_EncryptRSA value)? encryptRSA,
     TResult Function(_DecryptRSA value)? decryptRSA,
+    TResult Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
     TResult Function(_GenerateRSASignature value)? generateRSASignature,
     TResult Function(_VerifyRSASignature value)? verifyRSASignature,
     TResult Function(_GenerateED25519Key value)? generateED25519Key,
@@ -1611,6 +2153,8 @@ class _$GenerateED25519SignatureImpl implements _GenerateED25519Signature {
     required TResult Function() generateRSAKey,
     required TResult Function() encryptRSA,
     required TResult Function() decryptRSA,
+    required TResult Function() encryptRSACombinedWithAES,
+    required TResult Function() decryptRSACombinedWithAES,
     required TResult Function() generateRSASignature,
     required TResult Function() verifyRSASignature,
     required TResult Function() generateED25519Key,
@@ -1629,6 +2173,8 @@ class _$GenerateED25519SignatureImpl implements _GenerateED25519Signature {
     TResult? Function()? generateRSAKey,
     TResult? Function()? encryptRSA,
     TResult? Function()? decryptRSA,
+    TResult? Function()? encryptRSACombinedWithAES,
+    TResult? Function()? decryptRSACombinedWithAES,
     TResult? Function()? generateRSASignature,
     TResult? Function()? verifyRSASignature,
     TResult? Function()? generateED25519Key,
@@ -1647,6 +2193,8 @@ class _$GenerateED25519SignatureImpl implements _GenerateED25519Signature {
     TResult Function()? generateRSAKey,
     TResult Function()? encryptRSA,
     TResult Function()? decryptRSA,
+    TResult Function()? encryptRSACombinedWithAES,
+    TResult Function()? decryptRSACombinedWithAES,
     TResult Function()? generateRSASignature,
     TResult Function()? verifyRSASignature,
     TResult Function()? generateED25519Key,
@@ -1669,6 +2217,10 @@ class _$GenerateED25519SignatureImpl implements _GenerateED25519Signature {
     required TResult Function(_GenerateRSAKey value) generateRSAKey,
     required TResult Function(_EncryptRSA value) encryptRSA,
     required TResult Function(_DecryptRSA value) decryptRSA,
+    required TResult Function(_EncryptRSACombinedWithAES value)
+        encryptRSACombinedWithAES,
+    required TResult Function(_DecryptRSACombinedWithAES value)
+        decryptRSACombinedWithAES,
     required TResult Function(_GenerateRSASignature value) generateRSASignature,
     required TResult Function(_VerifyRSASignature value) verifyRSASignature,
     required TResult Function(_GenerateED25519Key value) generateED25519Key,
@@ -1689,6 +2241,10 @@ class _$GenerateED25519SignatureImpl implements _GenerateED25519Signature {
     TResult? Function(_GenerateRSAKey value)? generateRSAKey,
     TResult? Function(_EncryptRSA value)? encryptRSA,
     TResult? Function(_DecryptRSA value)? decryptRSA,
+    TResult? Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult? Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
     TResult? Function(_GenerateRSASignature value)? generateRSASignature,
     TResult? Function(_VerifyRSASignature value)? verifyRSASignature,
     TResult? Function(_GenerateED25519Key value)? generateED25519Key,
@@ -1708,6 +2264,10 @@ class _$GenerateED25519SignatureImpl implements _GenerateED25519Signature {
     TResult Function(_GenerateRSAKey value)? generateRSAKey,
     TResult Function(_EncryptRSA value)? encryptRSA,
     TResult Function(_DecryptRSA value)? decryptRSA,
+    TResult Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
     TResult Function(_GenerateRSASignature value)? generateRSASignature,
     TResult Function(_VerifyRSASignature value)? verifyRSASignature,
     TResult Function(_GenerateED25519Key value)? generateED25519Key,
@@ -1773,6 +2333,8 @@ class _$VerifyED25519SignatureImpl implements _VerifyED25519Signature {
     required TResult Function() generateRSAKey,
     required TResult Function() encryptRSA,
     required TResult Function() decryptRSA,
+    required TResult Function() encryptRSACombinedWithAES,
+    required TResult Function() decryptRSACombinedWithAES,
     required TResult Function() generateRSASignature,
     required TResult Function() verifyRSASignature,
     required TResult Function() generateED25519Key,
@@ -1791,6 +2353,8 @@ class _$VerifyED25519SignatureImpl implements _VerifyED25519Signature {
     TResult? Function()? generateRSAKey,
     TResult? Function()? encryptRSA,
     TResult? Function()? decryptRSA,
+    TResult? Function()? encryptRSACombinedWithAES,
+    TResult? Function()? decryptRSACombinedWithAES,
     TResult? Function()? generateRSASignature,
     TResult? Function()? verifyRSASignature,
     TResult? Function()? generateED25519Key,
@@ -1809,6 +2373,8 @@ class _$VerifyED25519SignatureImpl implements _VerifyED25519Signature {
     TResult Function()? generateRSAKey,
     TResult Function()? encryptRSA,
     TResult Function()? decryptRSA,
+    TResult Function()? encryptRSACombinedWithAES,
+    TResult Function()? decryptRSACombinedWithAES,
     TResult Function()? generateRSASignature,
     TResult Function()? verifyRSASignature,
     TResult Function()? generateED25519Key,
@@ -1831,6 +2397,10 @@ class _$VerifyED25519SignatureImpl implements _VerifyED25519Signature {
     required TResult Function(_GenerateRSAKey value) generateRSAKey,
     required TResult Function(_EncryptRSA value) encryptRSA,
     required TResult Function(_DecryptRSA value) decryptRSA,
+    required TResult Function(_EncryptRSACombinedWithAES value)
+        encryptRSACombinedWithAES,
+    required TResult Function(_DecryptRSACombinedWithAES value)
+        decryptRSACombinedWithAES,
     required TResult Function(_GenerateRSASignature value) generateRSASignature,
     required TResult Function(_VerifyRSASignature value) verifyRSASignature,
     required TResult Function(_GenerateED25519Key value) generateED25519Key,
@@ -1851,6 +2421,10 @@ class _$VerifyED25519SignatureImpl implements _VerifyED25519Signature {
     TResult? Function(_GenerateRSAKey value)? generateRSAKey,
     TResult? Function(_EncryptRSA value)? encryptRSA,
     TResult? Function(_DecryptRSA value)? decryptRSA,
+    TResult? Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult? Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
     TResult? Function(_GenerateRSASignature value)? generateRSASignature,
     TResult? Function(_VerifyRSASignature value)? verifyRSASignature,
     TResult? Function(_GenerateED25519Key value)? generateED25519Key,
@@ -1870,6 +2444,10 @@ class _$VerifyED25519SignatureImpl implements _VerifyED25519Signature {
     TResult Function(_GenerateRSAKey value)? generateRSAKey,
     TResult Function(_EncryptRSA value)? encryptRSA,
     TResult Function(_DecryptRSA value)? decryptRSA,
+    TResult Function(_EncryptRSACombinedWithAES value)?
+        encryptRSACombinedWithAES,
+    TResult Function(_DecryptRSACombinedWithAES value)?
+        decryptRSACombinedWithAES,
     TResult Function(_GenerateRSASignature value)? generateRSASignature,
     TResult Function(_VerifyRSASignature value)? verifyRSASignature,
     TResult Function(_GenerateED25519Key value)? generateED25519Key,
@@ -1894,6 +2472,8 @@ mixin _$ExampleCryptoState {
   String? get aesKey => throw _privateConstructorUsedError;
   String? get encryptedAES => throw _privateConstructorUsedError;
   CryptoKey? get rsaKey => throw _privateConstructorUsedError;
+  String? get encryptedAESKey => throw _privateConstructorUsedError;
+  String? get encryptedIVKey => throw _privateConstructorUsedError;
   String? get encryptedRSA => throw _privateConstructorUsedError;
   String? get signatureRSA => throw _privateConstructorUsedError;
   CryptoKey? get ed25519Key => throw _privateConstructorUsedError;
@@ -1915,6 +2495,8 @@ abstract class $ExampleCryptoStateCopyWith<$Res> {
       String? aesKey,
       String? encryptedAES,
       CryptoKey? rsaKey,
+      String? encryptedAESKey,
+      String? encryptedIVKey,
       String? encryptedRSA,
       String? signatureRSA,
       CryptoKey? ed25519Key,
@@ -1938,6 +2520,8 @@ class _$ExampleCryptoStateCopyWithImpl<$Res, $Val extends ExampleCryptoState>
     Object? aesKey = freezed,
     Object? encryptedAES = freezed,
     Object? rsaKey = freezed,
+    Object? encryptedAESKey = freezed,
+    Object? encryptedIVKey = freezed,
     Object? encryptedRSA = freezed,
     Object? signatureRSA = freezed,
     Object? ed25519Key = freezed,
@@ -1960,6 +2544,14 @@ class _$ExampleCryptoStateCopyWithImpl<$Res, $Val extends ExampleCryptoState>
           ? _value.rsaKey
           : rsaKey // ignore: cast_nullable_to_non_nullable
               as CryptoKey?,
+      encryptedAESKey: freezed == encryptedAESKey
+          ? _value.encryptedAESKey
+          : encryptedAESKey // ignore: cast_nullable_to_non_nullable
+              as String?,
+      encryptedIVKey: freezed == encryptedIVKey
+          ? _value.encryptedIVKey
+          : encryptedIVKey // ignore: cast_nullable_to_non_nullable
+              as String?,
       encryptedRSA: freezed == encryptedRSA
           ? _value.encryptedRSA
           : encryptedRSA // ignore: cast_nullable_to_non_nullable
@@ -1993,6 +2585,8 @@ abstract class _$$ExampleCryptoStateImplCopyWith<$Res>
       String? aesKey,
       String? encryptedAES,
       CryptoKey? rsaKey,
+      String? encryptedAESKey,
+      String? encryptedIVKey,
       String? encryptedRSA,
       String? signatureRSA,
       CryptoKey? ed25519Key,
@@ -2014,6 +2608,8 @@ class __$$ExampleCryptoStateImplCopyWithImpl<$Res>
     Object? aesKey = freezed,
     Object? encryptedAES = freezed,
     Object? rsaKey = freezed,
+    Object? encryptedAESKey = freezed,
+    Object? encryptedIVKey = freezed,
     Object? encryptedRSA = freezed,
     Object? signatureRSA = freezed,
     Object? ed25519Key = freezed,
@@ -2036,6 +2632,14 @@ class __$$ExampleCryptoStateImplCopyWithImpl<$Res>
           ? _value.rsaKey
           : rsaKey // ignore: cast_nullable_to_non_nullable
               as CryptoKey?,
+      encryptedAESKey: freezed == encryptedAESKey
+          ? _value.encryptedAESKey
+          : encryptedAESKey // ignore: cast_nullable_to_non_nullable
+              as String?,
+      encryptedIVKey: freezed == encryptedIVKey
+          ? _value.encryptedIVKey
+          : encryptedIVKey // ignore: cast_nullable_to_non_nullable
+              as String?,
       encryptedRSA: freezed == encryptedRSA
           ? _value.encryptedRSA
           : encryptedRSA // ignore: cast_nullable_to_non_nullable
@@ -2064,6 +2668,8 @@ class _$ExampleCryptoStateImpl implements _ExampleCryptoState {
       this.aesKey,
       this.encryptedAES,
       this.rsaKey,
+      this.encryptedAESKey,
+      this.encryptedIVKey,
       this.encryptedRSA,
       this.signatureRSA,
       this.ed25519Key,
@@ -2078,6 +2684,10 @@ class _$ExampleCryptoStateImpl implements _ExampleCryptoState {
   @override
   final CryptoKey? rsaKey;
   @override
+  final String? encryptedAESKey;
+  @override
+  final String? encryptedIVKey;
+  @override
   final String? encryptedRSA;
   @override
   final String? signatureRSA;
@@ -2088,7 +2698,7 @@ class _$ExampleCryptoStateImpl implements _ExampleCryptoState {
 
   @override
   String toString() {
-    return 'ExampleCryptoState(aesIVKey: $aesIVKey, aesKey: $aesKey, encryptedAES: $encryptedAES, rsaKey: $rsaKey, encryptedRSA: $encryptedRSA, signatureRSA: $signatureRSA, ed25519Key: $ed25519Key, signatureED25519: $signatureED25519)';
+    return 'ExampleCryptoState(aesIVKey: $aesIVKey, aesKey: $aesKey, encryptedAES: $encryptedAES, rsaKey: $rsaKey, encryptedAESKey: $encryptedAESKey, encryptedIVKey: $encryptedIVKey, encryptedRSA: $encryptedRSA, signatureRSA: $signatureRSA, ed25519Key: $ed25519Key, signatureED25519: $signatureED25519)';
   }
 
   @override
@@ -2102,6 +2712,10 @@ class _$ExampleCryptoStateImpl implements _ExampleCryptoState {
             (identical(other.encryptedAES, encryptedAES) ||
                 other.encryptedAES == encryptedAES) &&
             (identical(other.rsaKey, rsaKey) || other.rsaKey == rsaKey) &&
+            (identical(other.encryptedAESKey, encryptedAESKey) ||
+                other.encryptedAESKey == encryptedAESKey) &&
+            (identical(other.encryptedIVKey, encryptedIVKey) ||
+                other.encryptedIVKey == encryptedIVKey) &&
             (identical(other.encryptedRSA, encryptedRSA) ||
                 other.encryptedRSA == encryptedRSA) &&
             (identical(other.signatureRSA, signatureRSA) ||
@@ -2113,8 +2727,18 @@ class _$ExampleCryptoStateImpl implements _ExampleCryptoState {
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, aesIVKey, aesKey, encryptedAES,
-      rsaKey, encryptedRSA, signatureRSA, ed25519Key, signatureED25519);
+  int get hashCode => Object.hash(
+      runtimeType,
+      aesIVKey,
+      aesKey,
+      encryptedAES,
+      rsaKey,
+      encryptedAESKey,
+      encryptedIVKey,
+      encryptedRSA,
+      signatureRSA,
+      ed25519Key,
+      signatureED25519);
 
   @JsonKey(ignore: true)
   @override
@@ -2130,6 +2754,8 @@ abstract class _ExampleCryptoState implements ExampleCryptoState {
       final String? aesKey,
       final String? encryptedAES,
       final CryptoKey? rsaKey,
+      final String? encryptedAESKey,
+      final String? encryptedIVKey,
       final String? encryptedRSA,
       final String? signatureRSA,
       final CryptoKey? ed25519Key,
@@ -2143,6 +2769,10 @@ abstract class _ExampleCryptoState implements ExampleCryptoState {
   String? get encryptedAES;
   @override
   CryptoKey? get rsaKey;
+  @override
+  String? get encryptedAESKey;
+  @override
+  String? get encryptedIVKey;
   @override
   String? get encryptedRSA;
   @override

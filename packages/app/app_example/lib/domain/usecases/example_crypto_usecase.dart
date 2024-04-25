@@ -1,6 +1,7 @@
 import 'package:core_crypto/data/dto/model/crypto_key.dart';
 
 abstract class ExampleCryptoUseCase {
+  /// AES Key Size must be 16/24/32
   String generateAESKey(int size);
 
   String generateIVKey();
@@ -26,6 +27,20 @@ abstract class ExampleCryptoUseCase {
 
   String? decryptRSA({
     required String encodedPrivateKey,
+    required String encryptedText,
+  });
+
+  String? encryptRSAWithAES({
+    required String encodedRSAPrivateKey,
+    required String encryptedAESKey,
+    required String encryptedIVKey,
+    required String plainText,
+  });
+
+  String? decryptRSAWithAES({
+    required String encodedRSAPrivateKey,
+    required String encryptedAESKey,
+    required String encryptedIVKey,
     required String encryptedText,
   });
 

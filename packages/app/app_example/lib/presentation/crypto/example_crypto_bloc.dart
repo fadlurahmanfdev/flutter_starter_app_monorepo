@@ -28,6 +28,10 @@ class ExampleCryptoBloc extends Bloc<ExampleCryptoEvent, ExampleCryptoState> {
         generateRSAKey: (event) async => await _onGenerateRSAKey(event, emit),
         encryptRSA: (event) async => await _onEncryptRSA(event, emit),
         decryptRSA: (event) async => await _onDecryptRSA(event, emit),
+        encryptRSACombinedWithAES: (event) async =>
+            await _onEncryptRSACombinedWithAES(event, emit),
+        decryptRSACombinedWithAES: (event) async =>
+            await _onDecryptRSACombinedWithAES(event, emit),
         generateRSASignature: (event) async =>
             await _onGenerateRSASignature(event, emit),
         verifyRSASignature: (event) async => _onVerifyRSASignature(event, emit),
@@ -72,10 +76,28 @@ class ExampleCryptoBloc extends Bloc<ExampleCryptoEvent, ExampleCryptoState> {
 
   Future<void> _onGenerateRSAKey(
       _GenerateRSAKey event, Emitter<ExampleCryptoState> emit) async {
-    final key = exampleCryptoUseCase.generateRSAKey();
-    logger.d("RSA PUBLIC KEY: ${key.publicKey}");
-    logger.d("RSA PRIVATE KEY: ${key.privateKey}");
-    emit(state.copyWith(rsaKey: key));
+    final rsaKey = exampleCryptoUseCase.generateRSAKey();
+    log("RSA PUBLIC KEY: ${rsaKey.publicKey}");
+    log("RSA PRIVATE KEY: ${rsaKey.privateKey}");
+    final aesKey = exampleCryptoUseCase.generateAESKey(32);
+    log("AES KEY: $aesKey");
+    final ivKey = exampleCryptoUseCase.generateIVKey();
+    log("IV KEY: $ivKey");
+    final encryptedAESKey = exampleCryptoUseCase.encryptRSA(
+      encodedPublicKey: rsaKey.publicKey,
+      plainText: aesKey,
+    );
+    log("ENCRYPTED AES KEY: $encryptedAESKey");
+    final encryptedIVKey = exampleCryptoUseCase.encryptRSA(
+      encodedPublicKey: rsaKey.publicKey,
+      plainText: ivKey,
+    );
+    log("ENCRYPTED IV KEY: $encryptedIVKey");
+    emit(state.copyWith(
+      rsaKey: rsaKey,
+      encryptedAESKey: encryptedAESKey,
+      encryptedIVKey: encryptedIVKey,
+    ));
   }
 
   Future<void> _onEncryptRSA(
@@ -92,6 +114,30 @@ class ExampleCryptoBloc extends Bloc<ExampleCryptoEvent, ExampleCryptoState> {
         encodedPrivateKey: state.rsaKey!.privateKey,
         encryptedText: state.encryptedRSA!);
     logger.d("DECRYPTED RSA: $decrypted");
+  }
+
+  Future<void> _onEncryptRSACombinedWithAES(_EncryptRSACombinedWithAES event,
+      Emitter<ExampleCryptoState> emit) async {
+    final encrypted = exampleCryptoUseCase.encryptRSAWithAES(
+      encodedRSAPrivateKey: state.rsaKey!.privateKey,
+      encryptedAESKey: state.encryptedAESKey!,
+      encryptedIVKey: state.encryptedIVKey!,
+      plainText: "TES_VALUE_RSA",
+    );
+    log("ENCRYPTED RSA WITH AES: $encrypted");
+    emit(state.copyWith(encryptedRSA: encrypted));
+  }
+
+  Future<void> _onDecryptRSACombinedWithAES(_DecryptRSACombinedWithAES event,
+      Emitter<ExampleCryptoState> emit) async {
+    final decrypted = exampleCryptoUseCase.decryptRSAWithAES(
+      encodedRSAPrivateKey: state.rsaKey!.privateKey,
+      encryptedAESKey: state.encryptedAESKey!,
+      encryptedIVKey: state.encryptedIVKey!,
+      encryptedText: state.encryptedRSA!,
+    );
+    log("DECRYPTED RSA WITH AES: $decrypted");
+    emit(state.copyWith(encryptedRSA: decrypted));
   }
 
   Future<void> _onGenerateRSASignature(

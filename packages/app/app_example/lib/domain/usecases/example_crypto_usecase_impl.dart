@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:app_example/domain/usecases/example_crypto_usecase.dart';
 import 'package:core_crypto/core_crypto.dart';
 import 'package:core_crypto/data/dto/model/crypto_key.dart';
@@ -71,6 +73,66 @@ class ExampleCryptoUseCaseImpl extends ExampleCryptoUseCase {
   }) {
     return cryptoRSARepository.decrypt(
         encodedPrivateKey: encodedPrivateKey, encryptedText: encryptedText);
+  }
+
+  @override
+  String? encryptRSAWithAES({
+    required String encodedRSAPrivateKey,
+    required String encryptedAESKey,
+    required String encryptedIVKey,
+    required String plainText,
+  }) {
+    final decryptedAESKey = cryptoRSARepository.decrypt(
+      encodedPrivateKey: encodedRSAPrivateKey,
+      encryptedText: encryptedAESKey,
+    );
+    if (decryptedAESKey == null) {
+      log("failed encryptRSAWithAES, decryptedAESKey is missing");
+      return null;
+    }
+    final decryptedIVKey = cryptoRSARepository.decrypt(
+      encodedPrivateKey: encodedRSAPrivateKey,
+      encryptedText: encryptedIVKey,
+    );
+    if (decryptedIVKey == null) {
+      log("failed encryptRSAWithAES, decryptedIVKey is missing");
+      return null;
+    }
+    return cryptoAESRepository.encrypt(
+      key: decryptedAESKey,
+      ivKey: decryptedIVKey,
+      plainText: plainText,
+    );
+  }
+
+  @override
+  String? decryptRSAWithAES({
+    required String encodedRSAPrivateKey,
+    required String encryptedAESKey,
+    required String encryptedIVKey,
+    required String encryptedText,
+  }) {
+    final decryptedAESKey = cryptoRSARepository.decrypt(
+      encodedPrivateKey: encodedRSAPrivateKey,
+      encryptedText: encryptedAESKey,
+    );
+    if (decryptedAESKey == null) {
+      log("failed decryptRSAWithAES, decryptedAESKey is missing");
+      return null;
+    }
+    final decryptedIVKey = cryptoRSARepository.decrypt(
+      encodedPrivateKey: encodedRSAPrivateKey,
+      encryptedText: encryptedIVKey,
+    );
+    if (decryptedIVKey == null) {
+      log("failed decryptRSAWithAES, decryptedIVKey is missing");
+      return null;
+    }
+    return cryptoAESRepository.decrypt(
+      key: decryptedAESKey,
+      ivKey: decryptedIVKey,
+      encryptedText: encryptedText,
+    );
   }
 
   @override

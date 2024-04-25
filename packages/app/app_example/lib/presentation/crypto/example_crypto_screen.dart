@@ -55,6 +55,16 @@ class _ExampleCryptoScreenState extends State<ExampleCryptoScreen>
       key: 'DECRYPT_RSA',
     ),
     FeatureModel(
+      title: 'Encrypt RSA Combined With AES',
+      desc: 'Encrypt RSA Combined With AES',
+      key: 'ENCRYPT_RSA_COMBINED_WITH_AES',
+    ),
+    FeatureModel(
+      title: 'Decrypt RSA Combined With AES',
+      desc: 'Decrypt RSA Combined With AES',
+      key: 'DECRYPT_RSA_COMBINED_WITH_AES',
+    ),
+    FeatureModel(
       title: 'Generate RSA Signature',
       desc: 'Generate RSA Signature',
       key: 'GENERATE_RSA_SIGNATURE',
@@ -118,6 +128,15 @@ class _ExampleCryptoScreenState extends State<ExampleCryptoScreen>
                   context
                       .read<ExampleCryptoBloc>()
                       .add(const ExampleCryptoEvent.decryptRSA());
+                  break;
+                case 'ENCRYPT_RSA_COMBINED_WITH_AES':
+                  context
+                      .read<ExampleCryptoBloc>()
+                      .add(const ExampleCryptoEvent.encryptRSACombinedWithAES());
+                case 'DECRYPT_RSA_COMBINED_WITH_AES':
+                  context
+                      .read<ExampleCryptoBloc>()
+                      .add(const ExampleCryptoEvent.decryptRSACombinedWithAES());
                   break;
                 case 'GENERATE_RSA_SIGNATURE':
                   context

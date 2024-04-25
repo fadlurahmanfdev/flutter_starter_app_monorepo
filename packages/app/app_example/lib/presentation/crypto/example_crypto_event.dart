@@ -14,6 +14,10 @@ class ExampleCryptoEvent with _$ExampleCryptoEvent {
 
   const factory ExampleCryptoEvent.decryptRSA() = _DecryptRSA;
 
+  const factory ExampleCryptoEvent.encryptRSACombinedWithAES() = _EncryptRSACombinedWithAES;
+
+  const factory ExampleCryptoEvent.decryptRSACombinedWithAES() = _DecryptRSACombinedWithAES;
+
   const factory ExampleCryptoEvent.generateRSASignature() =
       _GenerateRSASignature;
 

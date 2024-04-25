@@ -11,7 +11,7 @@ class ItemFeatureWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 3),
+      padding: EdgeInsets.symmetric(vertical: 5),
       child: Row(
         children: [
           Icon(Icons.developer_mode),

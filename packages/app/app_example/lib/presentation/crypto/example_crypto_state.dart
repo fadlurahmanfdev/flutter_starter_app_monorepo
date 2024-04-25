@@ -7,6 +7,8 @@ class ExampleCryptoState with _$ExampleCryptoState {
     String? aesKey,
     String? encryptedAES,
     CryptoKey? rsaKey,
+    String? encryptedAESKey,
+    String? encryptedIVKey,
     String? encryptedRSA,
     String? signatureRSA,
     CryptoKey? ed25519Key,
