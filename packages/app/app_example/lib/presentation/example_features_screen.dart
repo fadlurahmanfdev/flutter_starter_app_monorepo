@@ -27,6 +27,7 @@ class _ExampleFeaturesScreenState extends State<ExampleFeaturesScreen>
     return Scaffold(
       appBar: AppBar(title: Text('List of Feature')),
       body: ListView.builder(
+        padding: EdgeInsets.symmetric(horizontal: 10),
         itemCount: features.length,
         itemBuilder: (context, index) {
           final feature = features[index];

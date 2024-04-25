@@ -10,20 +10,23 @@ class ItemFeatureWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Icon(Icons.developer_mode),
-        SizedBox(width: 10),
-        Expanded(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(feature.title),
-              Text(feature.desc),
-            ],
-          ),
-        )
-      ],
+    return Container(
+      margin: EdgeInsets.only(top: 3),
+      child: Row(
+        children: [
+          Icon(Icons.developer_mode),
+          SizedBox(width: 10),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(feature.title),
+                Text(feature.desc),
+              ],
+            ),
+          )
+        ],
+      ),
     );
   }
 }

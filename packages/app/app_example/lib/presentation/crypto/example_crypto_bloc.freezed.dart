@@ -21,6 +21,14 @@ mixin _$ExampleCryptoEvent {
     required TResult Function() generateAESKey,
     required TResult Function() encryptAES,
     required TResult Function() decryptAES,
+    required TResult Function() generateRSAKey,
+    required TResult Function() encryptRSA,
+    required TResult Function() decryptRSA,
+    required TResult Function() generateRSASignature,
+    required TResult Function() verifyRSASignature,
+    required TResult Function() generateED25519Key,
+    required TResult Function() generateED25519Signature,
+    required TResult Function() verifyED25519Signature,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -28,6 +36,14 @@ mixin _$ExampleCryptoEvent {
     TResult? Function()? generateAESKey,
     TResult? Function()? encryptAES,
     TResult? Function()? decryptAES,
+    TResult? Function()? generateRSAKey,
+    TResult? Function()? encryptRSA,
+    TResult? Function()? decryptRSA,
+    TResult? Function()? generateRSASignature,
+    TResult? Function()? verifyRSASignature,
+    TResult? Function()? generateED25519Key,
+    TResult? Function()? generateED25519Signature,
+    TResult? Function()? verifyED25519Signature,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -35,6 +51,14 @@ mixin _$ExampleCryptoEvent {
     TResult Function()? generateAESKey,
     TResult Function()? encryptAES,
     TResult Function()? decryptAES,
+    TResult Function()? generateRSAKey,
+    TResult Function()? encryptRSA,
+    TResult Function()? decryptRSA,
+    TResult Function()? generateRSASignature,
+    TResult Function()? verifyRSASignature,
+    TResult Function()? generateED25519Key,
+    TResult Function()? generateED25519Signature,
+    TResult Function()? verifyED25519Signature,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -43,6 +67,16 @@ mixin _$ExampleCryptoEvent {
     required TResult Function(_GenerateAESKey value) generateAESKey,
     required TResult Function(_EncryptAES value) encryptAES,
     required TResult Function(_DecryptAES value) decryptAES,
+    required TResult Function(_GenerateRSAKey value) generateRSAKey,
+    required TResult Function(_EncryptRSA value) encryptRSA,
+    required TResult Function(_DecryptRSA value) decryptRSA,
+    required TResult Function(_GenerateRSASignature value) generateRSASignature,
+    required TResult Function(_VerifyRSASignature value) verifyRSASignature,
+    required TResult Function(_GenerateED25519Key value) generateED25519Key,
+    required TResult Function(_GenerateED25519Signature value)
+        generateED25519Signature,
+    required TResult Function(_VerifyED25519Signature value)
+        verifyED25519Signature,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -50,6 +84,15 @@ mixin _$ExampleCryptoEvent {
     TResult? Function(_GenerateAESKey value)? generateAESKey,
     TResult? Function(_EncryptAES value)? encryptAES,
     TResult? Function(_DecryptAES value)? decryptAES,
+    TResult? Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult? Function(_EncryptRSA value)? encryptRSA,
+    TResult? Function(_DecryptRSA value)? decryptRSA,
+    TResult? Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult? Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult? Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult? Function(_GenerateED25519Signature value)?
+        generateED25519Signature,
+    TResult? Function(_VerifyED25519Signature value)? verifyED25519Signature,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -57,6 +100,14 @@ mixin _$ExampleCryptoEvent {
     TResult Function(_GenerateAESKey value)? generateAESKey,
     TResult Function(_EncryptAES value)? encryptAES,
     TResult Function(_DecryptAES value)? decryptAES,
+    TResult Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult Function(_EncryptRSA value)? encryptRSA,
+    TResult Function(_DecryptRSA value)? decryptRSA,
+    TResult Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult Function(_GenerateED25519Signature value)? generateED25519Signature,
+    TResult Function(_VerifyED25519Signature value)? verifyED25519Signature,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -121,6 +172,14 @@ class _$GenerateAESKeyImpl implements _GenerateAESKey {
     required TResult Function() generateAESKey,
     required TResult Function() encryptAES,
     required TResult Function() decryptAES,
+    required TResult Function() generateRSAKey,
+    required TResult Function() encryptRSA,
+    required TResult Function() decryptRSA,
+    required TResult Function() generateRSASignature,
+    required TResult Function() verifyRSASignature,
+    required TResult Function() generateED25519Key,
+    required TResult Function() generateED25519Signature,
+    required TResult Function() verifyED25519Signature,
   }) {
     return generateAESKey();
   }
@@ -131,6 +190,14 @@ class _$GenerateAESKeyImpl implements _GenerateAESKey {
     TResult? Function()? generateAESKey,
     TResult? Function()? encryptAES,
     TResult? Function()? decryptAES,
+    TResult? Function()? generateRSAKey,
+    TResult? Function()? encryptRSA,
+    TResult? Function()? decryptRSA,
+    TResult? Function()? generateRSASignature,
+    TResult? Function()? verifyRSASignature,
+    TResult? Function()? generateED25519Key,
+    TResult? Function()? generateED25519Signature,
+    TResult? Function()? verifyED25519Signature,
   }) {
     return generateAESKey?.call();
   }
@@ -141,6 +208,14 @@ class _$GenerateAESKeyImpl implements _GenerateAESKey {
     TResult Function()? generateAESKey,
     TResult Function()? encryptAES,
     TResult Function()? decryptAES,
+    TResult Function()? generateRSAKey,
+    TResult Function()? encryptRSA,
+    TResult Function()? decryptRSA,
+    TResult Function()? generateRSASignature,
+    TResult Function()? verifyRSASignature,
+    TResult Function()? generateED25519Key,
+    TResult Function()? generateED25519Signature,
+    TResult Function()? verifyED25519Signature,
     required TResult orElse(),
   }) {
     if (generateAESKey != null) {
@@ -155,6 +230,16 @@ class _$GenerateAESKeyImpl implements _GenerateAESKey {
     required TResult Function(_GenerateAESKey value) generateAESKey,
     required TResult Function(_EncryptAES value) encryptAES,
     required TResult Function(_DecryptAES value) decryptAES,
+    required TResult Function(_GenerateRSAKey value) generateRSAKey,
+    required TResult Function(_EncryptRSA value) encryptRSA,
+    required TResult Function(_DecryptRSA value) decryptRSA,
+    required TResult Function(_GenerateRSASignature value) generateRSASignature,
+    required TResult Function(_VerifyRSASignature value) verifyRSASignature,
+    required TResult Function(_GenerateED25519Key value) generateED25519Key,
+    required TResult Function(_GenerateED25519Signature value)
+        generateED25519Signature,
+    required TResult Function(_VerifyED25519Signature value)
+        verifyED25519Signature,
   }) {
     return generateAESKey(this);
   }
@@ -165,6 +250,15 @@ class _$GenerateAESKeyImpl implements _GenerateAESKey {
     TResult? Function(_GenerateAESKey value)? generateAESKey,
     TResult? Function(_EncryptAES value)? encryptAES,
     TResult? Function(_DecryptAES value)? decryptAES,
+    TResult? Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult? Function(_EncryptRSA value)? encryptRSA,
+    TResult? Function(_DecryptRSA value)? decryptRSA,
+    TResult? Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult? Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult? Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult? Function(_GenerateED25519Signature value)?
+        generateED25519Signature,
+    TResult? Function(_VerifyED25519Signature value)? verifyED25519Signature,
   }) {
     return generateAESKey?.call(this);
   }
@@ -175,6 +269,14 @@ class _$GenerateAESKeyImpl implements _GenerateAESKey {
     TResult Function(_GenerateAESKey value)? generateAESKey,
     TResult Function(_EncryptAES value)? encryptAES,
     TResult Function(_DecryptAES value)? decryptAES,
+    TResult Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult Function(_EncryptRSA value)? encryptRSA,
+    TResult Function(_DecryptRSA value)? decryptRSA,
+    TResult Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult Function(_GenerateED25519Signature value)? generateED25519Signature,
+    TResult Function(_VerifyED25519Signature value)? verifyED25519Signature,
     required TResult orElse(),
   }) {
     if (generateAESKey != null) {
@@ -229,6 +331,14 @@ class _$EncryptAESImpl implements _EncryptAES {
     required TResult Function() generateAESKey,
     required TResult Function() encryptAES,
     required TResult Function() decryptAES,
+    required TResult Function() generateRSAKey,
+    required TResult Function() encryptRSA,
+    required TResult Function() decryptRSA,
+    required TResult Function() generateRSASignature,
+    required TResult Function() verifyRSASignature,
+    required TResult Function() generateED25519Key,
+    required TResult Function() generateED25519Signature,
+    required TResult Function() verifyED25519Signature,
   }) {
     return encryptAES();
   }
@@ -239,6 +349,14 @@ class _$EncryptAESImpl implements _EncryptAES {
     TResult? Function()? generateAESKey,
     TResult? Function()? encryptAES,
     TResult? Function()? decryptAES,
+    TResult? Function()? generateRSAKey,
+    TResult? Function()? encryptRSA,
+    TResult? Function()? decryptRSA,
+    TResult? Function()? generateRSASignature,
+    TResult? Function()? verifyRSASignature,
+    TResult? Function()? generateED25519Key,
+    TResult? Function()? generateED25519Signature,
+    TResult? Function()? verifyED25519Signature,
   }) {
     return encryptAES?.call();
   }
@@ -249,6 +367,14 @@ class _$EncryptAESImpl implements _EncryptAES {
     TResult Function()? generateAESKey,
     TResult Function()? encryptAES,
     TResult Function()? decryptAES,
+    TResult Function()? generateRSAKey,
+    TResult Function()? encryptRSA,
+    TResult Function()? decryptRSA,
+    TResult Function()? generateRSASignature,
+    TResult Function()? verifyRSASignature,
+    TResult Function()? generateED25519Key,
+    TResult Function()? generateED25519Signature,
+    TResult Function()? verifyED25519Signature,
     required TResult orElse(),
   }) {
     if (encryptAES != null) {
@@ -263,6 +389,16 @@ class _$EncryptAESImpl implements _EncryptAES {
     required TResult Function(_GenerateAESKey value) generateAESKey,
     required TResult Function(_EncryptAES value) encryptAES,
     required TResult Function(_DecryptAES value) decryptAES,
+    required TResult Function(_GenerateRSAKey value) generateRSAKey,
+    required TResult Function(_EncryptRSA value) encryptRSA,
+    required TResult Function(_DecryptRSA value) decryptRSA,
+    required TResult Function(_GenerateRSASignature value) generateRSASignature,
+    required TResult Function(_VerifyRSASignature value) verifyRSASignature,
+    required TResult Function(_GenerateED25519Key value) generateED25519Key,
+    required TResult Function(_GenerateED25519Signature value)
+        generateED25519Signature,
+    required TResult Function(_VerifyED25519Signature value)
+        verifyED25519Signature,
   }) {
     return encryptAES(this);
   }
@@ -273,6 +409,15 @@ class _$EncryptAESImpl implements _EncryptAES {
     TResult? Function(_GenerateAESKey value)? generateAESKey,
     TResult? Function(_EncryptAES value)? encryptAES,
     TResult? Function(_DecryptAES value)? decryptAES,
+    TResult? Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult? Function(_EncryptRSA value)? encryptRSA,
+    TResult? Function(_DecryptRSA value)? decryptRSA,
+    TResult? Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult? Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult? Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult? Function(_GenerateED25519Signature value)?
+        generateED25519Signature,
+    TResult? Function(_VerifyED25519Signature value)? verifyED25519Signature,
   }) {
     return encryptAES?.call(this);
   }
@@ -283,6 +428,14 @@ class _$EncryptAESImpl implements _EncryptAES {
     TResult Function(_GenerateAESKey value)? generateAESKey,
     TResult Function(_EncryptAES value)? encryptAES,
     TResult Function(_DecryptAES value)? decryptAES,
+    TResult Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult Function(_EncryptRSA value)? encryptRSA,
+    TResult Function(_DecryptRSA value)? decryptRSA,
+    TResult Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult Function(_GenerateED25519Signature value)? generateED25519Signature,
+    TResult Function(_VerifyED25519Signature value)? verifyED25519Signature,
     required TResult orElse(),
   }) {
     if (encryptAES != null) {
@@ -337,6 +490,14 @@ class _$DecryptAESImpl implements _DecryptAES {
     required TResult Function() generateAESKey,
     required TResult Function() encryptAES,
     required TResult Function() decryptAES,
+    required TResult Function() generateRSAKey,
+    required TResult Function() encryptRSA,
+    required TResult Function() decryptRSA,
+    required TResult Function() generateRSASignature,
+    required TResult Function() verifyRSASignature,
+    required TResult Function() generateED25519Key,
+    required TResult Function() generateED25519Signature,
+    required TResult Function() verifyED25519Signature,
   }) {
     return decryptAES();
   }
@@ -347,6 +508,14 @@ class _$DecryptAESImpl implements _DecryptAES {
     TResult? Function()? generateAESKey,
     TResult? Function()? encryptAES,
     TResult? Function()? decryptAES,
+    TResult? Function()? generateRSAKey,
+    TResult? Function()? encryptRSA,
+    TResult? Function()? decryptRSA,
+    TResult? Function()? generateRSASignature,
+    TResult? Function()? verifyRSASignature,
+    TResult? Function()? generateED25519Key,
+    TResult? Function()? generateED25519Signature,
+    TResult? Function()? verifyED25519Signature,
   }) {
     return decryptAES?.call();
   }
@@ -357,6 +526,14 @@ class _$DecryptAESImpl implements _DecryptAES {
     TResult Function()? generateAESKey,
     TResult Function()? encryptAES,
     TResult Function()? decryptAES,
+    TResult Function()? generateRSAKey,
+    TResult Function()? encryptRSA,
+    TResult Function()? decryptRSA,
+    TResult Function()? generateRSASignature,
+    TResult Function()? verifyRSASignature,
+    TResult Function()? generateED25519Key,
+    TResult Function()? generateED25519Signature,
+    TResult Function()? verifyED25519Signature,
     required TResult orElse(),
   }) {
     if (decryptAES != null) {
@@ -371,6 +548,16 @@ class _$DecryptAESImpl implements _DecryptAES {
     required TResult Function(_GenerateAESKey value) generateAESKey,
     required TResult Function(_EncryptAES value) encryptAES,
     required TResult Function(_DecryptAES value) decryptAES,
+    required TResult Function(_GenerateRSAKey value) generateRSAKey,
+    required TResult Function(_EncryptRSA value) encryptRSA,
+    required TResult Function(_DecryptRSA value) decryptRSA,
+    required TResult Function(_GenerateRSASignature value) generateRSASignature,
+    required TResult Function(_VerifyRSASignature value) verifyRSASignature,
+    required TResult Function(_GenerateED25519Key value) generateED25519Key,
+    required TResult Function(_GenerateED25519Signature value)
+        generateED25519Signature,
+    required TResult Function(_VerifyED25519Signature value)
+        verifyED25519Signature,
   }) {
     return decryptAES(this);
   }
@@ -381,6 +568,15 @@ class _$DecryptAESImpl implements _DecryptAES {
     TResult? Function(_GenerateAESKey value)? generateAESKey,
     TResult? Function(_EncryptAES value)? encryptAES,
     TResult? Function(_DecryptAES value)? decryptAES,
+    TResult? Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult? Function(_EncryptRSA value)? encryptRSA,
+    TResult? Function(_DecryptRSA value)? decryptRSA,
+    TResult? Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult? Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult? Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult? Function(_GenerateED25519Signature value)?
+        generateED25519Signature,
+    TResult? Function(_VerifyED25519Signature value)? verifyED25519Signature,
   }) {
     return decryptAES?.call(this);
   }
@@ -391,6 +587,14 @@ class _$DecryptAESImpl implements _DecryptAES {
     TResult Function(_GenerateAESKey value)? generateAESKey,
     TResult Function(_EncryptAES value)? encryptAES,
     TResult Function(_DecryptAES value)? decryptAES,
+    TResult Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult Function(_EncryptRSA value)? encryptRSA,
+    TResult Function(_DecryptRSA value)? decryptRSA,
+    TResult Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult Function(_GenerateED25519Signature value)? generateED25519Signature,
+    TResult Function(_VerifyED25519Signature value)? verifyED25519Signature,
     required TResult orElse(),
   }) {
     if (decryptAES != null) {
@@ -405,10 +609,1295 @@ abstract class _DecryptAES implements ExampleCryptoEvent {
 }
 
 /// @nodoc
+abstract class _$$GenerateRSAKeyImplCopyWith<$Res> {
+  factory _$$GenerateRSAKeyImplCopyWith(_$GenerateRSAKeyImpl value,
+          $Res Function(_$GenerateRSAKeyImpl) then) =
+      __$$GenerateRSAKeyImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$GenerateRSAKeyImplCopyWithImpl<$Res>
+    extends _$ExampleCryptoEventCopyWithImpl<$Res, _$GenerateRSAKeyImpl>
+    implements _$$GenerateRSAKeyImplCopyWith<$Res> {
+  __$$GenerateRSAKeyImplCopyWithImpl(
+      _$GenerateRSAKeyImpl _value, $Res Function(_$GenerateRSAKeyImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$GenerateRSAKeyImpl implements _GenerateRSAKey {
+  const _$GenerateRSAKeyImpl();
+
+  @override
+  String toString() {
+    return 'ExampleCryptoEvent.generateRSAKey()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$GenerateRSAKeyImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() generateAESKey,
+    required TResult Function() encryptAES,
+    required TResult Function() decryptAES,
+    required TResult Function() generateRSAKey,
+    required TResult Function() encryptRSA,
+    required TResult Function() decryptRSA,
+    required TResult Function() generateRSASignature,
+    required TResult Function() verifyRSASignature,
+    required TResult Function() generateED25519Key,
+    required TResult Function() generateED25519Signature,
+    required TResult Function() verifyED25519Signature,
+  }) {
+    return generateRSAKey();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? generateAESKey,
+    TResult? Function()? encryptAES,
+    TResult? Function()? decryptAES,
+    TResult? Function()? generateRSAKey,
+    TResult? Function()? encryptRSA,
+    TResult? Function()? decryptRSA,
+    TResult? Function()? generateRSASignature,
+    TResult? Function()? verifyRSASignature,
+    TResult? Function()? generateED25519Key,
+    TResult? Function()? generateED25519Signature,
+    TResult? Function()? verifyED25519Signature,
+  }) {
+    return generateRSAKey?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? generateAESKey,
+    TResult Function()? encryptAES,
+    TResult Function()? decryptAES,
+    TResult Function()? generateRSAKey,
+    TResult Function()? encryptRSA,
+    TResult Function()? decryptRSA,
+    TResult Function()? generateRSASignature,
+    TResult Function()? verifyRSASignature,
+    TResult Function()? generateED25519Key,
+    TResult Function()? generateED25519Signature,
+    TResult Function()? verifyED25519Signature,
+    required TResult orElse(),
+  }) {
+    if (generateRSAKey != null) {
+      return generateRSAKey();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_GenerateAESKey value) generateAESKey,
+    required TResult Function(_EncryptAES value) encryptAES,
+    required TResult Function(_DecryptAES value) decryptAES,
+    required TResult Function(_GenerateRSAKey value) generateRSAKey,
+    required TResult Function(_EncryptRSA value) encryptRSA,
+    required TResult Function(_DecryptRSA value) decryptRSA,
+    required TResult Function(_GenerateRSASignature value) generateRSASignature,
+    required TResult Function(_VerifyRSASignature value) verifyRSASignature,
+    required TResult Function(_GenerateED25519Key value) generateED25519Key,
+    required TResult Function(_GenerateED25519Signature value)
+        generateED25519Signature,
+    required TResult Function(_VerifyED25519Signature value)
+        verifyED25519Signature,
+  }) {
+    return generateRSAKey(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_GenerateAESKey value)? generateAESKey,
+    TResult? Function(_EncryptAES value)? encryptAES,
+    TResult? Function(_DecryptAES value)? decryptAES,
+    TResult? Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult? Function(_EncryptRSA value)? encryptRSA,
+    TResult? Function(_DecryptRSA value)? decryptRSA,
+    TResult? Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult? Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult? Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult? Function(_GenerateED25519Signature value)?
+        generateED25519Signature,
+    TResult? Function(_VerifyED25519Signature value)? verifyED25519Signature,
+  }) {
+    return generateRSAKey?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_GenerateAESKey value)? generateAESKey,
+    TResult Function(_EncryptAES value)? encryptAES,
+    TResult Function(_DecryptAES value)? decryptAES,
+    TResult Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult Function(_EncryptRSA value)? encryptRSA,
+    TResult Function(_DecryptRSA value)? decryptRSA,
+    TResult Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult Function(_GenerateED25519Signature value)? generateED25519Signature,
+    TResult Function(_VerifyED25519Signature value)? verifyED25519Signature,
+    required TResult orElse(),
+  }) {
+    if (generateRSAKey != null) {
+      return generateRSAKey(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _GenerateRSAKey implements ExampleCryptoEvent {
+  const factory _GenerateRSAKey() = _$GenerateRSAKeyImpl;
+}
+
+/// @nodoc
+abstract class _$$EncryptRSAImplCopyWith<$Res> {
+  factory _$$EncryptRSAImplCopyWith(
+          _$EncryptRSAImpl value, $Res Function(_$EncryptRSAImpl) then) =
+      __$$EncryptRSAImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$EncryptRSAImplCopyWithImpl<$Res>
+    extends _$ExampleCryptoEventCopyWithImpl<$Res, _$EncryptRSAImpl>
+    implements _$$EncryptRSAImplCopyWith<$Res> {
+  __$$EncryptRSAImplCopyWithImpl(
+      _$EncryptRSAImpl _value, $Res Function(_$EncryptRSAImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$EncryptRSAImpl implements _EncryptRSA {
+  const _$EncryptRSAImpl();
+
+  @override
+  String toString() {
+    return 'ExampleCryptoEvent.encryptRSA()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$EncryptRSAImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() generateAESKey,
+    required TResult Function() encryptAES,
+    required TResult Function() decryptAES,
+    required TResult Function() generateRSAKey,
+    required TResult Function() encryptRSA,
+    required TResult Function() decryptRSA,
+    required TResult Function() generateRSASignature,
+    required TResult Function() verifyRSASignature,
+    required TResult Function() generateED25519Key,
+    required TResult Function() generateED25519Signature,
+    required TResult Function() verifyED25519Signature,
+  }) {
+    return encryptRSA();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? generateAESKey,
+    TResult? Function()? encryptAES,
+    TResult? Function()? decryptAES,
+    TResult? Function()? generateRSAKey,
+    TResult? Function()? encryptRSA,
+    TResult? Function()? decryptRSA,
+    TResult? Function()? generateRSASignature,
+    TResult? Function()? verifyRSASignature,
+    TResult? Function()? generateED25519Key,
+    TResult? Function()? generateED25519Signature,
+    TResult? Function()? verifyED25519Signature,
+  }) {
+    return encryptRSA?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? generateAESKey,
+    TResult Function()? encryptAES,
+    TResult Function()? decryptAES,
+    TResult Function()? generateRSAKey,
+    TResult Function()? encryptRSA,
+    TResult Function()? decryptRSA,
+    TResult Function()? generateRSASignature,
+    TResult Function()? verifyRSASignature,
+    TResult Function()? generateED25519Key,
+    TResult Function()? generateED25519Signature,
+    TResult Function()? verifyED25519Signature,
+    required TResult orElse(),
+  }) {
+    if (encryptRSA != null) {
+      return encryptRSA();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_GenerateAESKey value) generateAESKey,
+    required TResult Function(_EncryptAES value) encryptAES,
+    required TResult Function(_DecryptAES value) decryptAES,
+    required TResult Function(_GenerateRSAKey value) generateRSAKey,
+    required TResult Function(_EncryptRSA value) encryptRSA,
+    required TResult Function(_DecryptRSA value) decryptRSA,
+    required TResult Function(_GenerateRSASignature value) generateRSASignature,
+    required TResult Function(_VerifyRSASignature value) verifyRSASignature,
+    required TResult Function(_GenerateED25519Key value) generateED25519Key,
+    required TResult Function(_GenerateED25519Signature value)
+        generateED25519Signature,
+    required TResult Function(_VerifyED25519Signature value)
+        verifyED25519Signature,
+  }) {
+    return encryptRSA(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_GenerateAESKey value)? generateAESKey,
+    TResult? Function(_EncryptAES value)? encryptAES,
+    TResult? Function(_DecryptAES value)? decryptAES,
+    TResult? Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult? Function(_EncryptRSA value)? encryptRSA,
+    TResult? Function(_DecryptRSA value)? decryptRSA,
+    TResult? Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult? Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult? Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult? Function(_GenerateED25519Signature value)?
+        generateED25519Signature,
+    TResult? Function(_VerifyED25519Signature value)? verifyED25519Signature,
+  }) {
+    return encryptRSA?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_GenerateAESKey value)? generateAESKey,
+    TResult Function(_EncryptAES value)? encryptAES,
+    TResult Function(_DecryptAES value)? decryptAES,
+    TResult Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult Function(_EncryptRSA value)? encryptRSA,
+    TResult Function(_DecryptRSA value)? decryptRSA,
+    TResult Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult Function(_GenerateED25519Signature value)? generateED25519Signature,
+    TResult Function(_VerifyED25519Signature value)? verifyED25519Signature,
+    required TResult orElse(),
+  }) {
+    if (encryptRSA != null) {
+      return encryptRSA(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _EncryptRSA implements ExampleCryptoEvent {
+  const factory _EncryptRSA() = _$EncryptRSAImpl;
+}
+
+/// @nodoc
+abstract class _$$DecryptRSAImplCopyWith<$Res> {
+  factory _$$DecryptRSAImplCopyWith(
+          _$DecryptRSAImpl value, $Res Function(_$DecryptRSAImpl) then) =
+      __$$DecryptRSAImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$DecryptRSAImplCopyWithImpl<$Res>
+    extends _$ExampleCryptoEventCopyWithImpl<$Res, _$DecryptRSAImpl>
+    implements _$$DecryptRSAImplCopyWith<$Res> {
+  __$$DecryptRSAImplCopyWithImpl(
+      _$DecryptRSAImpl _value, $Res Function(_$DecryptRSAImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$DecryptRSAImpl implements _DecryptRSA {
+  const _$DecryptRSAImpl();
+
+  @override
+  String toString() {
+    return 'ExampleCryptoEvent.decryptRSA()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$DecryptRSAImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() generateAESKey,
+    required TResult Function() encryptAES,
+    required TResult Function() decryptAES,
+    required TResult Function() generateRSAKey,
+    required TResult Function() encryptRSA,
+    required TResult Function() decryptRSA,
+    required TResult Function() generateRSASignature,
+    required TResult Function() verifyRSASignature,
+    required TResult Function() generateED25519Key,
+    required TResult Function() generateED25519Signature,
+    required TResult Function() verifyED25519Signature,
+  }) {
+    return decryptRSA();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? generateAESKey,
+    TResult? Function()? encryptAES,
+    TResult? Function()? decryptAES,
+    TResult? Function()? generateRSAKey,
+    TResult? Function()? encryptRSA,
+    TResult? Function()? decryptRSA,
+    TResult? Function()? generateRSASignature,
+    TResult? Function()? verifyRSASignature,
+    TResult? Function()? generateED25519Key,
+    TResult? Function()? generateED25519Signature,
+    TResult? Function()? verifyED25519Signature,
+  }) {
+    return decryptRSA?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? generateAESKey,
+    TResult Function()? encryptAES,
+    TResult Function()? decryptAES,
+    TResult Function()? generateRSAKey,
+    TResult Function()? encryptRSA,
+    TResult Function()? decryptRSA,
+    TResult Function()? generateRSASignature,
+    TResult Function()? verifyRSASignature,
+    TResult Function()? generateED25519Key,
+    TResult Function()? generateED25519Signature,
+    TResult Function()? verifyED25519Signature,
+    required TResult orElse(),
+  }) {
+    if (decryptRSA != null) {
+      return decryptRSA();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_GenerateAESKey value) generateAESKey,
+    required TResult Function(_EncryptAES value) encryptAES,
+    required TResult Function(_DecryptAES value) decryptAES,
+    required TResult Function(_GenerateRSAKey value) generateRSAKey,
+    required TResult Function(_EncryptRSA value) encryptRSA,
+    required TResult Function(_DecryptRSA value) decryptRSA,
+    required TResult Function(_GenerateRSASignature value) generateRSASignature,
+    required TResult Function(_VerifyRSASignature value) verifyRSASignature,
+    required TResult Function(_GenerateED25519Key value) generateED25519Key,
+    required TResult Function(_GenerateED25519Signature value)
+        generateED25519Signature,
+    required TResult Function(_VerifyED25519Signature value)
+        verifyED25519Signature,
+  }) {
+    return decryptRSA(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_GenerateAESKey value)? generateAESKey,
+    TResult? Function(_EncryptAES value)? encryptAES,
+    TResult? Function(_DecryptAES value)? decryptAES,
+    TResult? Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult? Function(_EncryptRSA value)? encryptRSA,
+    TResult? Function(_DecryptRSA value)? decryptRSA,
+    TResult? Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult? Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult? Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult? Function(_GenerateED25519Signature value)?
+        generateED25519Signature,
+    TResult? Function(_VerifyED25519Signature value)? verifyED25519Signature,
+  }) {
+    return decryptRSA?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_GenerateAESKey value)? generateAESKey,
+    TResult Function(_EncryptAES value)? encryptAES,
+    TResult Function(_DecryptAES value)? decryptAES,
+    TResult Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult Function(_EncryptRSA value)? encryptRSA,
+    TResult Function(_DecryptRSA value)? decryptRSA,
+    TResult Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult Function(_GenerateED25519Signature value)? generateED25519Signature,
+    TResult Function(_VerifyED25519Signature value)? verifyED25519Signature,
+    required TResult orElse(),
+  }) {
+    if (decryptRSA != null) {
+      return decryptRSA(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _DecryptRSA implements ExampleCryptoEvent {
+  const factory _DecryptRSA() = _$DecryptRSAImpl;
+}
+
+/// @nodoc
+abstract class _$$GenerateRSASignatureImplCopyWith<$Res> {
+  factory _$$GenerateRSASignatureImplCopyWith(_$GenerateRSASignatureImpl value,
+          $Res Function(_$GenerateRSASignatureImpl) then) =
+      __$$GenerateRSASignatureImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$GenerateRSASignatureImplCopyWithImpl<$Res>
+    extends _$ExampleCryptoEventCopyWithImpl<$Res, _$GenerateRSASignatureImpl>
+    implements _$$GenerateRSASignatureImplCopyWith<$Res> {
+  __$$GenerateRSASignatureImplCopyWithImpl(_$GenerateRSASignatureImpl _value,
+      $Res Function(_$GenerateRSASignatureImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$GenerateRSASignatureImpl implements _GenerateRSASignature {
+  const _$GenerateRSASignatureImpl();
+
+  @override
+  String toString() {
+    return 'ExampleCryptoEvent.generateRSASignature()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$GenerateRSASignatureImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() generateAESKey,
+    required TResult Function() encryptAES,
+    required TResult Function() decryptAES,
+    required TResult Function() generateRSAKey,
+    required TResult Function() encryptRSA,
+    required TResult Function() decryptRSA,
+    required TResult Function() generateRSASignature,
+    required TResult Function() verifyRSASignature,
+    required TResult Function() generateED25519Key,
+    required TResult Function() generateED25519Signature,
+    required TResult Function() verifyED25519Signature,
+  }) {
+    return generateRSASignature();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? generateAESKey,
+    TResult? Function()? encryptAES,
+    TResult? Function()? decryptAES,
+    TResult? Function()? generateRSAKey,
+    TResult? Function()? encryptRSA,
+    TResult? Function()? decryptRSA,
+    TResult? Function()? generateRSASignature,
+    TResult? Function()? verifyRSASignature,
+    TResult? Function()? generateED25519Key,
+    TResult? Function()? generateED25519Signature,
+    TResult? Function()? verifyED25519Signature,
+  }) {
+    return generateRSASignature?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? generateAESKey,
+    TResult Function()? encryptAES,
+    TResult Function()? decryptAES,
+    TResult Function()? generateRSAKey,
+    TResult Function()? encryptRSA,
+    TResult Function()? decryptRSA,
+    TResult Function()? generateRSASignature,
+    TResult Function()? verifyRSASignature,
+    TResult Function()? generateED25519Key,
+    TResult Function()? generateED25519Signature,
+    TResult Function()? verifyED25519Signature,
+    required TResult orElse(),
+  }) {
+    if (generateRSASignature != null) {
+      return generateRSASignature();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_GenerateAESKey value) generateAESKey,
+    required TResult Function(_EncryptAES value) encryptAES,
+    required TResult Function(_DecryptAES value) decryptAES,
+    required TResult Function(_GenerateRSAKey value) generateRSAKey,
+    required TResult Function(_EncryptRSA value) encryptRSA,
+    required TResult Function(_DecryptRSA value) decryptRSA,
+    required TResult Function(_GenerateRSASignature value) generateRSASignature,
+    required TResult Function(_VerifyRSASignature value) verifyRSASignature,
+    required TResult Function(_GenerateED25519Key value) generateED25519Key,
+    required TResult Function(_GenerateED25519Signature value)
+        generateED25519Signature,
+    required TResult Function(_VerifyED25519Signature value)
+        verifyED25519Signature,
+  }) {
+    return generateRSASignature(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_GenerateAESKey value)? generateAESKey,
+    TResult? Function(_EncryptAES value)? encryptAES,
+    TResult? Function(_DecryptAES value)? decryptAES,
+    TResult? Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult? Function(_EncryptRSA value)? encryptRSA,
+    TResult? Function(_DecryptRSA value)? decryptRSA,
+    TResult? Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult? Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult? Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult? Function(_GenerateED25519Signature value)?
+        generateED25519Signature,
+    TResult? Function(_VerifyED25519Signature value)? verifyED25519Signature,
+  }) {
+    return generateRSASignature?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_GenerateAESKey value)? generateAESKey,
+    TResult Function(_EncryptAES value)? encryptAES,
+    TResult Function(_DecryptAES value)? decryptAES,
+    TResult Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult Function(_EncryptRSA value)? encryptRSA,
+    TResult Function(_DecryptRSA value)? decryptRSA,
+    TResult Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult Function(_GenerateED25519Signature value)? generateED25519Signature,
+    TResult Function(_VerifyED25519Signature value)? verifyED25519Signature,
+    required TResult orElse(),
+  }) {
+    if (generateRSASignature != null) {
+      return generateRSASignature(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _GenerateRSASignature implements ExampleCryptoEvent {
+  const factory _GenerateRSASignature() = _$GenerateRSASignatureImpl;
+}
+
+/// @nodoc
+abstract class _$$VerifyRSASignatureImplCopyWith<$Res> {
+  factory _$$VerifyRSASignatureImplCopyWith(_$VerifyRSASignatureImpl value,
+          $Res Function(_$VerifyRSASignatureImpl) then) =
+      __$$VerifyRSASignatureImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$VerifyRSASignatureImplCopyWithImpl<$Res>
+    extends _$ExampleCryptoEventCopyWithImpl<$Res, _$VerifyRSASignatureImpl>
+    implements _$$VerifyRSASignatureImplCopyWith<$Res> {
+  __$$VerifyRSASignatureImplCopyWithImpl(_$VerifyRSASignatureImpl _value,
+      $Res Function(_$VerifyRSASignatureImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$VerifyRSASignatureImpl implements _VerifyRSASignature {
+  const _$VerifyRSASignatureImpl();
+
+  @override
+  String toString() {
+    return 'ExampleCryptoEvent.verifyRSASignature()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$VerifyRSASignatureImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() generateAESKey,
+    required TResult Function() encryptAES,
+    required TResult Function() decryptAES,
+    required TResult Function() generateRSAKey,
+    required TResult Function() encryptRSA,
+    required TResult Function() decryptRSA,
+    required TResult Function() generateRSASignature,
+    required TResult Function() verifyRSASignature,
+    required TResult Function() generateED25519Key,
+    required TResult Function() generateED25519Signature,
+    required TResult Function() verifyED25519Signature,
+  }) {
+    return verifyRSASignature();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? generateAESKey,
+    TResult? Function()? encryptAES,
+    TResult? Function()? decryptAES,
+    TResult? Function()? generateRSAKey,
+    TResult? Function()? encryptRSA,
+    TResult? Function()? decryptRSA,
+    TResult? Function()? generateRSASignature,
+    TResult? Function()? verifyRSASignature,
+    TResult? Function()? generateED25519Key,
+    TResult? Function()? generateED25519Signature,
+    TResult? Function()? verifyED25519Signature,
+  }) {
+    return verifyRSASignature?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? generateAESKey,
+    TResult Function()? encryptAES,
+    TResult Function()? decryptAES,
+    TResult Function()? generateRSAKey,
+    TResult Function()? encryptRSA,
+    TResult Function()? decryptRSA,
+    TResult Function()? generateRSASignature,
+    TResult Function()? verifyRSASignature,
+    TResult Function()? generateED25519Key,
+    TResult Function()? generateED25519Signature,
+    TResult Function()? verifyED25519Signature,
+    required TResult orElse(),
+  }) {
+    if (verifyRSASignature != null) {
+      return verifyRSASignature();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_GenerateAESKey value) generateAESKey,
+    required TResult Function(_EncryptAES value) encryptAES,
+    required TResult Function(_DecryptAES value) decryptAES,
+    required TResult Function(_GenerateRSAKey value) generateRSAKey,
+    required TResult Function(_EncryptRSA value) encryptRSA,
+    required TResult Function(_DecryptRSA value) decryptRSA,
+    required TResult Function(_GenerateRSASignature value) generateRSASignature,
+    required TResult Function(_VerifyRSASignature value) verifyRSASignature,
+    required TResult Function(_GenerateED25519Key value) generateED25519Key,
+    required TResult Function(_GenerateED25519Signature value)
+        generateED25519Signature,
+    required TResult Function(_VerifyED25519Signature value)
+        verifyED25519Signature,
+  }) {
+    return verifyRSASignature(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_GenerateAESKey value)? generateAESKey,
+    TResult? Function(_EncryptAES value)? encryptAES,
+    TResult? Function(_DecryptAES value)? decryptAES,
+    TResult? Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult? Function(_EncryptRSA value)? encryptRSA,
+    TResult? Function(_DecryptRSA value)? decryptRSA,
+    TResult? Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult? Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult? Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult? Function(_GenerateED25519Signature value)?
+        generateED25519Signature,
+    TResult? Function(_VerifyED25519Signature value)? verifyED25519Signature,
+  }) {
+    return verifyRSASignature?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_GenerateAESKey value)? generateAESKey,
+    TResult Function(_EncryptAES value)? encryptAES,
+    TResult Function(_DecryptAES value)? decryptAES,
+    TResult Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult Function(_EncryptRSA value)? encryptRSA,
+    TResult Function(_DecryptRSA value)? decryptRSA,
+    TResult Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult Function(_GenerateED25519Signature value)? generateED25519Signature,
+    TResult Function(_VerifyED25519Signature value)? verifyED25519Signature,
+    required TResult orElse(),
+  }) {
+    if (verifyRSASignature != null) {
+      return verifyRSASignature(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _VerifyRSASignature implements ExampleCryptoEvent {
+  const factory _VerifyRSASignature() = _$VerifyRSASignatureImpl;
+}
+
+/// @nodoc
+abstract class _$$GenerateED25519KeyImplCopyWith<$Res> {
+  factory _$$GenerateED25519KeyImplCopyWith(_$GenerateED25519KeyImpl value,
+          $Res Function(_$GenerateED25519KeyImpl) then) =
+      __$$GenerateED25519KeyImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$GenerateED25519KeyImplCopyWithImpl<$Res>
+    extends _$ExampleCryptoEventCopyWithImpl<$Res, _$GenerateED25519KeyImpl>
+    implements _$$GenerateED25519KeyImplCopyWith<$Res> {
+  __$$GenerateED25519KeyImplCopyWithImpl(_$GenerateED25519KeyImpl _value,
+      $Res Function(_$GenerateED25519KeyImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$GenerateED25519KeyImpl implements _GenerateED25519Key {
+  const _$GenerateED25519KeyImpl();
+
+  @override
+  String toString() {
+    return 'ExampleCryptoEvent.generateED25519Key()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$GenerateED25519KeyImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() generateAESKey,
+    required TResult Function() encryptAES,
+    required TResult Function() decryptAES,
+    required TResult Function() generateRSAKey,
+    required TResult Function() encryptRSA,
+    required TResult Function() decryptRSA,
+    required TResult Function() generateRSASignature,
+    required TResult Function() verifyRSASignature,
+    required TResult Function() generateED25519Key,
+    required TResult Function() generateED25519Signature,
+    required TResult Function() verifyED25519Signature,
+  }) {
+    return generateED25519Key();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? generateAESKey,
+    TResult? Function()? encryptAES,
+    TResult? Function()? decryptAES,
+    TResult? Function()? generateRSAKey,
+    TResult? Function()? encryptRSA,
+    TResult? Function()? decryptRSA,
+    TResult? Function()? generateRSASignature,
+    TResult? Function()? verifyRSASignature,
+    TResult? Function()? generateED25519Key,
+    TResult? Function()? generateED25519Signature,
+    TResult? Function()? verifyED25519Signature,
+  }) {
+    return generateED25519Key?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? generateAESKey,
+    TResult Function()? encryptAES,
+    TResult Function()? decryptAES,
+    TResult Function()? generateRSAKey,
+    TResult Function()? encryptRSA,
+    TResult Function()? decryptRSA,
+    TResult Function()? generateRSASignature,
+    TResult Function()? verifyRSASignature,
+    TResult Function()? generateED25519Key,
+    TResult Function()? generateED25519Signature,
+    TResult Function()? verifyED25519Signature,
+    required TResult orElse(),
+  }) {
+    if (generateED25519Key != null) {
+      return generateED25519Key();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_GenerateAESKey value) generateAESKey,
+    required TResult Function(_EncryptAES value) encryptAES,
+    required TResult Function(_DecryptAES value) decryptAES,
+    required TResult Function(_GenerateRSAKey value) generateRSAKey,
+    required TResult Function(_EncryptRSA value) encryptRSA,
+    required TResult Function(_DecryptRSA value) decryptRSA,
+    required TResult Function(_GenerateRSASignature value) generateRSASignature,
+    required TResult Function(_VerifyRSASignature value) verifyRSASignature,
+    required TResult Function(_GenerateED25519Key value) generateED25519Key,
+    required TResult Function(_GenerateED25519Signature value)
+        generateED25519Signature,
+    required TResult Function(_VerifyED25519Signature value)
+        verifyED25519Signature,
+  }) {
+    return generateED25519Key(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_GenerateAESKey value)? generateAESKey,
+    TResult? Function(_EncryptAES value)? encryptAES,
+    TResult? Function(_DecryptAES value)? decryptAES,
+    TResult? Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult? Function(_EncryptRSA value)? encryptRSA,
+    TResult? Function(_DecryptRSA value)? decryptRSA,
+    TResult? Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult? Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult? Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult? Function(_GenerateED25519Signature value)?
+        generateED25519Signature,
+    TResult? Function(_VerifyED25519Signature value)? verifyED25519Signature,
+  }) {
+    return generateED25519Key?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_GenerateAESKey value)? generateAESKey,
+    TResult Function(_EncryptAES value)? encryptAES,
+    TResult Function(_DecryptAES value)? decryptAES,
+    TResult Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult Function(_EncryptRSA value)? encryptRSA,
+    TResult Function(_DecryptRSA value)? decryptRSA,
+    TResult Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult Function(_GenerateED25519Signature value)? generateED25519Signature,
+    TResult Function(_VerifyED25519Signature value)? verifyED25519Signature,
+    required TResult orElse(),
+  }) {
+    if (generateED25519Key != null) {
+      return generateED25519Key(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _GenerateED25519Key implements ExampleCryptoEvent {
+  const factory _GenerateED25519Key() = _$GenerateED25519KeyImpl;
+}
+
+/// @nodoc
+abstract class _$$GenerateED25519SignatureImplCopyWith<$Res> {
+  factory _$$GenerateED25519SignatureImplCopyWith(
+          _$GenerateED25519SignatureImpl value,
+          $Res Function(_$GenerateED25519SignatureImpl) then) =
+      __$$GenerateED25519SignatureImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$GenerateED25519SignatureImplCopyWithImpl<$Res>
+    extends _$ExampleCryptoEventCopyWithImpl<$Res,
+        _$GenerateED25519SignatureImpl>
+    implements _$$GenerateED25519SignatureImplCopyWith<$Res> {
+  __$$GenerateED25519SignatureImplCopyWithImpl(
+      _$GenerateED25519SignatureImpl _value,
+      $Res Function(_$GenerateED25519SignatureImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$GenerateED25519SignatureImpl implements _GenerateED25519Signature {
+  const _$GenerateED25519SignatureImpl();
+
+  @override
+  String toString() {
+    return 'ExampleCryptoEvent.generateED25519Signature()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$GenerateED25519SignatureImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() generateAESKey,
+    required TResult Function() encryptAES,
+    required TResult Function() decryptAES,
+    required TResult Function() generateRSAKey,
+    required TResult Function() encryptRSA,
+    required TResult Function() decryptRSA,
+    required TResult Function() generateRSASignature,
+    required TResult Function() verifyRSASignature,
+    required TResult Function() generateED25519Key,
+    required TResult Function() generateED25519Signature,
+    required TResult Function() verifyED25519Signature,
+  }) {
+    return generateED25519Signature();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? generateAESKey,
+    TResult? Function()? encryptAES,
+    TResult? Function()? decryptAES,
+    TResult? Function()? generateRSAKey,
+    TResult? Function()? encryptRSA,
+    TResult? Function()? decryptRSA,
+    TResult? Function()? generateRSASignature,
+    TResult? Function()? verifyRSASignature,
+    TResult? Function()? generateED25519Key,
+    TResult? Function()? generateED25519Signature,
+    TResult? Function()? verifyED25519Signature,
+  }) {
+    return generateED25519Signature?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? generateAESKey,
+    TResult Function()? encryptAES,
+    TResult Function()? decryptAES,
+    TResult Function()? generateRSAKey,
+    TResult Function()? encryptRSA,
+    TResult Function()? decryptRSA,
+    TResult Function()? generateRSASignature,
+    TResult Function()? verifyRSASignature,
+    TResult Function()? generateED25519Key,
+    TResult Function()? generateED25519Signature,
+    TResult Function()? verifyED25519Signature,
+    required TResult orElse(),
+  }) {
+    if (generateED25519Signature != null) {
+      return generateED25519Signature();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_GenerateAESKey value) generateAESKey,
+    required TResult Function(_EncryptAES value) encryptAES,
+    required TResult Function(_DecryptAES value) decryptAES,
+    required TResult Function(_GenerateRSAKey value) generateRSAKey,
+    required TResult Function(_EncryptRSA value) encryptRSA,
+    required TResult Function(_DecryptRSA value) decryptRSA,
+    required TResult Function(_GenerateRSASignature value) generateRSASignature,
+    required TResult Function(_VerifyRSASignature value) verifyRSASignature,
+    required TResult Function(_GenerateED25519Key value) generateED25519Key,
+    required TResult Function(_GenerateED25519Signature value)
+        generateED25519Signature,
+    required TResult Function(_VerifyED25519Signature value)
+        verifyED25519Signature,
+  }) {
+    return generateED25519Signature(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_GenerateAESKey value)? generateAESKey,
+    TResult? Function(_EncryptAES value)? encryptAES,
+    TResult? Function(_DecryptAES value)? decryptAES,
+    TResult? Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult? Function(_EncryptRSA value)? encryptRSA,
+    TResult? Function(_DecryptRSA value)? decryptRSA,
+    TResult? Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult? Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult? Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult? Function(_GenerateED25519Signature value)?
+        generateED25519Signature,
+    TResult? Function(_VerifyED25519Signature value)? verifyED25519Signature,
+  }) {
+    return generateED25519Signature?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_GenerateAESKey value)? generateAESKey,
+    TResult Function(_EncryptAES value)? encryptAES,
+    TResult Function(_DecryptAES value)? decryptAES,
+    TResult Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult Function(_EncryptRSA value)? encryptRSA,
+    TResult Function(_DecryptRSA value)? decryptRSA,
+    TResult Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult Function(_GenerateED25519Signature value)? generateED25519Signature,
+    TResult Function(_VerifyED25519Signature value)? verifyED25519Signature,
+    required TResult orElse(),
+  }) {
+    if (generateED25519Signature != null) {
+      return generateED25519Signature(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _GenerateED25519Signature implements ExampleCryptoEvent {
+  const factory _GenerateED25519Signature() = _$GenerateED25519SignatureImpl;
+}
+
+/// @nodoc
+abstract class _$$VerifyED25519SignatureImplCopyWith<$Res> {
+  factory _$$VerifyED25519SignatureImplCopyWith(
+          _$VerifyED25519SignatureImpl value,
+          $Res Function(_$VerifyED25519SignatureImpl) then) =
+      __$$VerifyED25519SignatureImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$VerifyED25519SignatureImplCopyWithImpl<$Res>
+    extends _$ExampleCryptoEventCopyWithImpl<$Res, _$VerifyED25519SignatureImpl>
+    implements _$$VerifyED25519SignatureImplCopyWith<$Res> {
+  __$$VerifyED25519SignatureImplCopyWithImpl(
+      _$VerifyED25519SignatureImpl _value,
+      $Res Function(_$VerifyED25519SignatureImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$VerifyED25519SignatureImpl implements _VerifyED25519Signature {
+  const _$VerifyED25519SignatureImpl();
+
+  @override
+  String toString() {
+    return 'ExampleCryptoEvent.verifyED25519Signature()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$VerifyED25519SignatureImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() generateAESKey,
+    required TResult Function() encryptAES,
+    required TResult Function() decryptAES,
+    required TResult Function() generateRSAKey,
+    required TResult Function() encryptRSA,
+    required TResult Function() decryptRSA,
+    required TResult Function() generateRSASignature,
+    required TResult Function() verifyRSASignature,
+    required TResult Function() generateED25519Key,
+    required TResult Function() generateED25519Signature,
+    required TResult Function() verifyED25519Signature,
+  }) {
+    return verifyED25519Signature();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? generateAESKey,
+    TResult? Function()? encryptAES,
+    TResult? Function()? decryptAES,
+    TResult? Function()? generateRSAKey,
+    TResult? Function()? encryptRSA,
+    TResult? Function()? decryptRSA,
+    TResult? Function()? generateRSASignature,
+    TResult? Function()? verifyRSASignature,
+    TResult? Function()? generateED25519Key,
+    TResult? Function()? generateED25519Signature,
+    TResult? Function()? verifyED25519Signature,
+  }) {
+    return verifyED25519Signature?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? generateAESKey,
+    TResult Function()? encryptAES,
+    TResult Function()? decryptAES,
+    TResult Function()? generateRSAKey,
+    TResult Function()? encryptRSA,
+    TResult Function()? decryptRSA,
+    TResult Function()? generateRSASignature,
+    TResult Function()? verifyRSASignature,
+    TResult Function()? generateED25519Key,
+    TResult Function()? generateED25519Signature,
+    TResult Function()? verifyED25519Signature,
+    required TResult orElse(),
+  }) {
+    if (verifyED25519Signature != null) {
+      return verifyED25519Signature();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_GenerateAESKey value) generateAESKey,
+    required TResult Function(_EncryptAES value) encryptAES,
+    required TResult Function(_DecryptAES value) decryptAES,
+    required TResult Function(_GenerateRSAKey value) generateRSAKey,
+    required TResult Function(_EncryptRSA value) encryptRSA,
+    required TResult Function(_DecryptRSA value) decryptRSA,
+    required TResult Function(_GenerateRSASignature value) generateRSASignature,
+    required TResult Function(_VerifyRSASignature value) verifyRSASignature,
+    required TResult Function(_GenerateED25519Key value) generateED25519Key,
+    required TResult Function(_GenerateED25519Signature value)
+        generateED25519Signature,
+    required TResult Function(_VerifyED25519Signature value)
+        verifyED25519Signature,
+  }) {
+    return verifyED25519Signature(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_GenerateAESKey value)? generateAESKey,
+    TResult? Function(_EncryptAES value)? encryptAES,
+    TResult? Function(_DecryptAES value)? decryptAES,
+    TResult? Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult? Function(_EncryptRSA value)? encryptRSA,
+    TResult? Function(_DecryptRSA value)? decryptRSA,
+    TResult? Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult? Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult? Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult? Function(_GenerateED25519Signature value)?
+        generateED25519Signature,
+    TResult? Function(_VerifyED25519Signature value)? verifyED25519Signature,
+  }) {
+    return verifyED25519Signature?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_GenerateAESKey value)? generateAESKey,
+    TResult Function(_EncryptAES value)? encryptAES,
+    TResult Function(_DecryptAES value)? decryptAES,
+    TResult Function(_GenerateRSAKey value)? generateRSAKey,
+    TResult Function(_EncryptRSA value)? encryptRSA,
+    TResult Function(_DecryptRSA value)? decryptRSA,
+    TResult Function(_GenerateRSASignature value)? generateRSASignature,
+    TResult Function(_VerifyRSASignature value)? verifyRSASignature,
+    TResult Function(_GenerateED25519Key value)? generateED25519Key,
+    TResult Function(_GenerateED25519Signature value)? generateED25519Signature,
+    TResult Function(_VerifyED25519Signature value)? verifyED25519Signature,
+    required TResult orElse(),
+  }) {
+    if (verifyED25519Signature != null) {
+      return verifyED25519Signature(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _VerifyED25519Signature implements ExampleCryptoEvent {
+  const factory _VerifyED25519Signature() = _$VerifyED25519SignatureImpl;
+}
+
+/// @nodoc
 mixin _$ExampleCryptoState {
   String? get aesIVKey => throw _privateConstructorUsedError;
   String? get aesKey => throw _privateConstructorUsedError;
   String? get encryptedAES => throw _privateConstructorUsedError;
+  CryptoKey? get rsaKey => throw _privateConstructorUsedError;
+  String? get encryptedRSA => throw _privateConstructorUsedError;
+  String? get signatureRSA => throw _privateConstructorUsedError;
+  CryptoKey? get ed25519Key => throw _privateConstructorUsedError;
+  String? get signatureED25519 => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $ExampleCryptoStateCopyWith<ExampleCryptoState> get copyWith =>
@@ -421,7 +1910,15 @@ abstract class $ExampleCryptoStateCopyWith<$Res> {
           ExampleCryptoState value, $Res Function(ExampleCryptoState) then) =
       _$ExampleCryptoStateCopyWithImpl<$Res, ExampleCryptoState>;
   @useResult
-  $Res call({String? aesIVKey, String? aesKey, String? encryptedAES});
+  $Res call(
+      {String? aesIVKey,
+      String? aesKey,
+      String? encryptedAES,
+      CryptoKey? rsaKey,
+      String? encryptedRSA,
+      String? signatureRSA,
+      CryptoKey? ed25519Key,
+      String? signatureED25519});
 }
 
 /// @nodoc
@@ -440,6 +1937,11 @@ class _$ExampleCryptoStateCopyWithImpl<$Res, $Val extends ExampleCryptoState>
     Object? aesIVKey = freezed,
     Object? aesKey = freezed,
     Object? encryptedAES = freezed,
+    Object? rsaKey = freezed,
+    Object? encryptedRSA = freezed,
+    Object? signatureRSA = freezed,
+    Object? ed25519Key = freezed,
+    Object? signatureED25519 = freezed,
   }) {
     return _then(_value.copyWith(
       aesIVKey: freezed == aesIVKey
@@ -454,6 +1956,26 @@ class _$ExampleCryptoStateCopyWithImpl<$Res, $Val extends ExampleCryptoState>
           ? _value.encryptedAES
           : encryptedAES // ignore: cast_nullable_to_non_nullable
               as String?,
+      rsaKey: freezed == rsaKey
+          ? _value.rsaKey
+          : rsaKey // ignore: cast_nullable_to_non_nullable
+              as CryptoKey?,
+      encryptedRSA: freezed == encryptedRSA
+          ? _value.encryptedRSA
+          : encryptedRSA // ignore: cast_nullable_to_non_nullable
+              as String?,
+      signatureRSA: freezed == signatureRSA
+          ? _value.signatureRSA
+          : signatureRSA // ignore: cast_nullable_to_non_nullable
+              as String?,
+      ed25519Key: freezed == ed25519Key
+          ? _value.ed25519Key
+          : ed25519Key // ignore: cast_nullable_to_non_nullable
+              as CryptoKey?,
+      signatureED25519: freezed == signatureED25519
+          ? _value.signatureED25519
+          : signatureED25519 // ignore: cast_nullable_to_non_nullable
+              as String?,
     ) as $Val);
   }
 }
@@ -466,7 +1988,15 @@ abstract class _$$ExampleCryptoStateImplCopyWith<$Res>
       __$$ExampleCryptoStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String? aesIVKey, String? aesKey, String? encryptedAES});
+  $Res call(
+      {String? aesIVKey,
+      String? aesKey,
+      String? encryptedAES,
+      CryptoKey? rsaKey,
+      String? encryptedRSA,
+      String? signatureRSA,
+      CryptoKey? ed25519Key,
+      String? signatureED25519});
 }
 
 /// @nodoc
@@ -483,6 +2013,11 @@ class __$$ExampleCryptoStateImplCopyWithImpl<$Res>
     Object? aesIVKey = freezed,
     Object? aesKey = freezed,
     Object? encryptedAES = freezed,
+    Object? rsaKey = freezed,
+    Object? encryptedRSA = freezed,
+    Object? signatureRSA = freezed,
+    Object? ed25519Key = freezed,
+    Object? signatureED25519 = freezed,
   }) {
     return _then(_$ExampleCryptoStateImpl(
       aesIVKey: freezed == aesIVKey
@@ -497,6 +2032,26 @@ class __$$ExampleCryptoStateImplCopyWithImpl<$Res>
           ? _value.encryptedAES
           : encryptedAES // ignore: cast_nullable_to_non_nullable
               as String?,
+      rsaKey: freezed == rsaKey
+          ? _value.rsaKey
+          : rsaKey // ignore: cast_nullable_to_non_nullable
+              as CryptoKey?,
+      encryptedRSA: freezed == encryptedRSA
+          ? _value.encryptedRSA
+          : encryptedRSA // ignore: cast_nullable_to_non_nullable
+              as String?,
+      signatureRSA: freezed == signatureRSA
+          ? _value.signatureRSA
+          : signatureRSA // ignore: cast_nullable_to_non_nullable
+              as String?,
+      ed25519Key: freezed == ed25519Key
+          ? _value.ed25519Key
+          : ed25519Key // ignore: cast_nullable_to_non_nullable
+              as CryptoKey?,
+      signatureED25519: freezed == signatureED25519
+          ? _value.signatureED25519
+          : signatureED25519 // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -505,7 +2060,14 @@ class __$$ExampleCryptoStateImplCopyWithImpl<$Res>
 
 class _$ExampleCryptoStateImpl implements _ExampleCryptoState {
   const _$ExampleCryptoStateImpl(
-      {this.aesIVKey, this.aesKey, this.encryptedAES});
+      {this.aesIVKey,
+      this.aesKey,
+      this.encryptedAES,
+      this.rsaKey,
+      this.encryptedRSA,
+      this.signatureRSA,
+      this.ed25519Key,
+      this.signatureED25519});
 
   @override
   final String? aesIVKey;
@@ -513,10 +2075,20 @@ class _$ExampleCryptoStateImpl implements _ExampleCryptoState {
   final String? aesKey;
   @override
   final String? encryptedAES;
+  @override
+  final CryptoKey? rsaKey;
+  @override
+  final String? encryptedRSA;
+  @override
+  final String? signatureRSA;
+  @override
+  final CryptoKey? ed25519Key;
+  @override
+  final String? signatureED25519;
 
   @override
   String toString() {
-    return 'ExampleCryptoState(aesIVKey: $aesIVKey, aesKey: $aesKey, encryptedAES: $encryptedAES)';
+    return 'ExampleCryptoState(aesIVKey: $aesIVKey, aesKey: $aesKey, encryptedAES: $encryptedAES, rsaKey: $rsaKey, encryptedRSA: $encryptedRSA, signatureRSA: $signatureRSA, ed25519Key: $ed25519Key, signatureED25519: $signatureED25519)';
   }
 
   @override
@@ -528,11 +2100,21 @@ class _$ExampleCryptoStateImpl implements _ExampleCryptoState {
                 other.aesIVKey == aesIVKey) &&
             (identical(other.aesKey, aesKey) || other.aesKey == aesKey) &&
             (identical(other.encryptedAES, encryptedAES) ||
-                other.encryptedAES == encryptedAES));
+                other.encryptedAES == encryptedAES) &&
+            (identical(other.rsaKey, rsaKey) || other.rsaKey == rsaKey) &&
+            (identical(other.encryptedRSA, encryptedRSA) ||
+                other.encryptedRSA == encryptedRSA) &&
+            (identical(other.signatureRSA, signatureRSA) ||
+                other.signatureRSA == signatureRSA) &&
+            (identical(other.ed25519Key, ed25519Key) ||
+                other.ed25519Key == ed25519Key) &&
+            (identical(other.signatureED25519, signatureED25519) ||
+                other.signatureED25519 == signatureED25519));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, aesIVKey, aesKey, encryptedAES);
+  int get hashCode => Object.hash(runtimeType, aesIVKey, aesKey, encryptedAES,
+      rsaKey, encryptedRSA, signatureRSA, ed25519Key, signatureED25519);
 
   @JsonKey(ignore: true)
   @override
@@ -546,7 +2128,12 @@ abstract class _ExampleCryptoState implements ExampleCryptoState {
   const factory _ExampleCryptoState(
       {final String? aesIVKey,
       final String? aesKey,
-      final String? encryptedAES}) = _$ExampleCryptoStateImpl;
+      final String? encryptedAES,
+      final CryptoKey? rsaKey,
+      final String? encryptedRSA,
+      final String? signatureRSA,
+      final CryptoKey? ed25519Key,
+      final String? signatureED25519}) = _$ExampleCryptoStateImpl;
 
   @override
   String? get aesIVKey;
@@ -554,6 +2141,16 @@ abstract class _ExampleCryptoState implements ExampleCryptoState {
   String? get aesKey;
   @override
   String? get encryptedAES;
+  @override
+  CryptoKey? get rsaKey;
+  @override
+  String? get encryptedRSA;
+  @override
+  String? get signatureRSA;
+  @override
+  CryptoKey? get ed25519Key;
+  @override
+  String? get signatureED25519;
   @override
   @JsonKey(ignore: true)
   _$$ExampleCryptoStateImplCopyWith<_$ExampleCryptoStateImpl> get copyWith =>

@@ -4,16 +4,18 @@ version: 0.0.1
 publish_to: none
 
 environment:
-  sdk: '>=3.3.3 <4.0.0'
+  sdk: '>=3.2.6 <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
+  ed25519_edwards: 0.3.1
   encrypt: ^5.0.3
   get_it: ^7.7.0
   logger: ^2.2.0
+  rsa_encrypt: ^2.0.0
 
   core_config:
     path: ../core_config

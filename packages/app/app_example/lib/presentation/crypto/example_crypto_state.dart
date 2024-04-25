@@ -6,6 +6,11 @@ class ExampleCryptoState with _$ExampleCryptoState {
     String? aesIVKey,
     String? aesKey,
     String? encryptedAES,
+    CryptoKey? rsaKey,
+    String? encryptedRSA,
+    String? signatureRSA,
+    CryptoKey? ed25519Key,
+    String? signatureED25519,
   }) = _ExampleCryptoState;
 
   factory ExampleCryptoState.initialize() => const ExampleCryptoState();

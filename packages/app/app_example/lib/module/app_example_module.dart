@@ -31,6 +31,8 @@ class AppExampleModule extends ClassModule {
     c
       ..registerFactory<ExampleCryptoUseCase>(() => ExampleCryptoUseCaseImpl(
             cryptoAESRepository: c.get<CryptoAESRepository>(),
+            cryptoRSARepository: c.get<CryptoRSARepository>(),
+            cryptoED25519Repository: c.get<CryptoED25519Repository>(),
           ))
       ..registerFactory<ExampleCryptoBloc>(() => ExampleCryptoBloc(
             exampleCryptoUseCase: c.get<ExampleCryptoUseCase>(),

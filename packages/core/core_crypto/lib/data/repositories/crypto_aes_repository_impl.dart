@@ -1,16 +1,11 @@
-import 'dart:convert';
-import 'dart:math';
+import 'dart:developer';
+import 'dart:math' hide log;
 
 import 'package:core_crypto/data/dto/exception/core_crypto_exception.dart';
 import 'package:core_crypto/data/repositories/crypto_aes_repository.dart';
 import 'package:encrypt/encrypt.dart';
-import 'package:logger/logger.dart';
 
 class CryptoAESRepositoryImpl extends CryptoAESRepository {
-  Logger logger;
-
-  CryptoAESRepositoryImpl({required this.logger});
-
   String generateRandomKey(int length) {
     const mChars =
         'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890';
@@ -48,8 +43,11 @@ class CryptoAESRepositoryImpl extends CryptoAESRepository {
       final encrypter = Encrypter(AES(Key.fromUtf8(key), mode: AESMode.cbc));
       final iv = IV.fromUtf8(ivKey);
       return encrypter.encrypt(plainText, iv: iv).base64;
-    } on Exception catch (e) {
-      logger.e("failed encrypt: $e");
+    } on Error catch (e, s) {
+      log("failed encrypt on error encrypt: $e, $s");
+      return null;
+    } on Exception catch (e, s) {
+      log("failed encrypt on exception encrypt: $e, $s");
       return null;
     }
   }
@@ -61,15 +59,14 @@ class CryptoAESRepositoryImpl extends CryptoAESRepository {
     required String encryptedText,
   }) {
     try {
-      logger.d("encrypted text: $encryptedText");
       final encrypter = Encrypter(AES(Key.fromUtf8(key), mode: AESMode.cbc));
       final iv = IV.fromUtf8(ivKey);
       return encrypter.decrypt(Encrypted.fromBase64(encryptedText), iv: iv);
-    } on Error catch (e) {
-      logger.e("failed decrypt err: $e");
+    } on Error catch (e, s) {
+      log("failed decrypt on error encrypt: $e, $s");
       return null;
-    } on Exception catch (e) {
-      logger.e("failed decrypt exc: $e");
+    } on Exception catch (e, s) {
+      log("failed decrypt on exception encrypt: $e, $s");
       return null;
     }
   }
