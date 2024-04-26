@@ -47,10 +47,4 @@ class _ExampleFeaturesScreenState extends State<ExampleFeaturesScreen>
       ),
     );
   }
-
-  void testMasterFunction(){
-    // "test master function 1"
-    // "test master function 2"
-    // "test master function 3"
-  }
 }
