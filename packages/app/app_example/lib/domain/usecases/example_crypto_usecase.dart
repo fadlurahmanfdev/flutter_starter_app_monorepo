@@ -1,4 +1,4 @@
-import 'package:core_crypto/data/dto/model/crypto_key.dart';
+import 'package:flutter_core_crypto/flutter_core_crypto.dart';
 
 abstract class ExampleCryptoUseCase {
   /// AES Key Size must be 16/24/32
@@ -18,7 +18,7 @@ abstract class ExampleCryptoUseCase {
     required String encryptedText,
   });
 
-  CryptoKey generateRSAKey();
+  Future<CryptoKey> generateRSAKey();
 
   String? encryptRSA({
     required String encodedPublicKey,

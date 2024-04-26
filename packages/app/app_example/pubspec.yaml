@@ -20,8 +20,11 @@ dependencies:
 
   core_config:
     path: ../../core/core_config
-  core_crypto:
-    path: ../../core/core_crypto
+
+  flutter_core_crypto:
+    git:
+      url: https://github.com/fadlurahmanfdev/flutter_core_crypto
+      ref: 0.0.8
 
 dev_dependencies:
   flutter_test:

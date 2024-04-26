@@ -1,8 +1,8 @@
 import 'dart:developer';
 
 import 'package:app_example/domain/usecases/example_crypto_usecase.dart';
-import 'package:core_crypto/data/dto/model/crypto_key.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_core_crypto/data/dto/model/crypto_key.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:logger/logger.dart';
 
@@ -76,7 +76,7 @@ class ExampleCryptoBloc extends Bloc<ExampleCryptoEvent, ExampleCryptoState> {
 
   Future<void> _onGenerateRSAKey(
       _GenerateRSAKey event, Emitter<ExampleCryptoState> emit) async {
-    final rsaKey = exampleCryptoUseCase.generateRSAKey();
+    final rsaKey = await exampleCryptoUseCase.generateRSAKey();
     log("RSA PUBLIC KEY: ${rsaKey.publicKey}");
     log("RSA PRIVATE KEY: ${rsaKey.privateKey}");
     final aesKey = exampleCryptoUseCase.generateAESKey(32);
@@ -103,7 +103,7 @@ class ExampleCryptoBloc extends Bloc<ExampleCryptoEvent, ExampleCryptoState> {
   Future<void> _onEncryptRSA(
       _EncryptRSA event, Emitter<ExampleCryptoState> emit) async {
     final encrypted = exampleCryptoUseCase.encryptRSA(
-        encodedPublicKey: state.rsaKey!.publicKey, plainText: "TES_VALUE_RSA");
+        encodedPublicKey: state.rsaKey!.publicKey, plainText: "TES");
     logger.d("ENCRYPTED RSA: $encrypted");
     emit(state.copyWith(encryptedRSA: encrypted));
   }

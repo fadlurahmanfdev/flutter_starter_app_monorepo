@@ -1,9 +1,7 @@
 import 'dart:developer';
 
 import 'package:app_example/domain/usecases/example_crypto_usecase.dart';
-import 'package:core_crypto/core_crypto.dart';
-import 'package:core_crypto/data/dto/model/crypto_key.dart';
-import 'package:core_crypto/data/repositories/crypto_rsa_repository.dart';
+import 'package:flutter_core_crypto/flutter_core_crypto.dart';
 
 class ExampleCryptoUseCaseImpl extends ExampleCryptoUseCase {
   CryptoAESRepository cryptoAESRepository;
@@ -53,7 +51,7 @@ class ExampleCryptoUseCaseImpl extends ExampleCryptoUseCase {
   }
 
   @override
-  CryptoKey generateRSAKey() {
+  Future<CryptoKey> generateRSAKey() {
     return cryptoRSARepository.generateKey();
   }
 

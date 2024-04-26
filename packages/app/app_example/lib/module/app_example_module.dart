@@ -4,7 +4,7 @@ import 'package:app_example/presentation/crypto/example_crypto_bloc.dart';
 import 'package:app_example/presentation/crypto/example_crypto_screen.dart';
 import 'package:app_example/presentation/example_features_screen.dart';
 import 'package:core_config/core_config.dart';
-import 'package:core_crypto/core_crypto.dart';
+import 'package:flutter_core_crypto/flutter_core_crypto.dart';
 import 'package:get_it/get_it.dart';
 import 'package:logger/logger.dart';
 
