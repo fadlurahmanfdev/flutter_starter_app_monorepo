@@ -1,6 +1,7 @@
 import 'package:app_example/data/model/feature_model.dart';
 import 'package:app_example/module/index.dart';
 import 'package:app_example/presentation/crypto/example_crypto_screen.dart';
+import 'package:app_example/presentation/video_player/video_player_features_screen.dart';
 import 'package:app_example/presentation/widget/feature_widget.dart';
 import 'package:core_config/core_config.dart';
 import 'package:flutter/material.dart';
@@ -20,6 +21,11 @@ class _ExampleFeaturesScreenState extends State<ExampleFeaturesScreen>
       desc: 'List of Cryptography Feature',
       key: 'CRYPTO',
     ),
+    FeatureModel(
+      title: 'Video Player',
+      desc: 'List of Video Player Feature',
+      key: 'VIDEO_PLAYER',
+    ),
   ];
 
   @override
@@ -36,6 +42,9 @@ class _ExampleFeaturesScreenState extends State<ExampleFeaturesScreen>
               switch (feature.key) {
                 case 'CRYPTO':
                   navigator.push(AppExampleRouteModule, ExampleCryptoScreen);
+                  break;
+                case 'VIDEO_PLAYER':
+                  navigator.push(AppExampleRouteModule, VideoPlayerFeaturesScreen);
                   break;
               }
             },

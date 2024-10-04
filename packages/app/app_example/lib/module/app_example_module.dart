@@ -3,6 +3,8 @@ import 'package:app_example/domain/usecases/example_crypto_usecase_impl.dart';
 import 'package:app_example/presentation/crypto/example_crypto_bloc.dart';
 import 'package:app_example/presentation/crypto/example_crypto_screen.dart';
 import 'package:app_example/presentation/example_features_screen.dart';
+import 'package:app_example/presentation/video_player/video_player_bloc.dart';
+import 'package:app_example/presentation/video_player/video_player_features_screen.dart';
 import 'package:core_config/core_config.dart';
 import 'package:flutter_core_crypto/flutter_core_crypto.dart';
 import 'package:get_it/get_it.dart';
@@ -22,6 +24,11 @@ class AppExampleRouteModule extends RouteModule {
           screenType: ExampleCryptoScreen,
           page: (context) => ExampleCryptoScreen().wrap(context),
         ),
+        RouteModel(
+          moduleType: AppExampleRouteModule,
+          screenType: VideoPlayerFeaturesScreen,
+          page: (context) => VideoPlayerFeaturesScreen().wrap(context),
+        ),
       ];
 }
 
@@ -37,6 +44,7 @@ class AppExampleModule extends ClassModule {
       ..registerFactory<ExampleCryptoBloc>(() => ExampleCryptoBloc(
             exampleCryptoUseCase: c.get<ExampleCryptoUseCase>(),
             logger: c.get<Logger>(),
-          ));
+          ))
+      ..registerFactory<VideoPlayerBloc>(() => VideoPlayerBloc());
   }
 }
