@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 import 'package:app_example/domain/usecases/example_crypto_usecase.dart';
-import 'package:flutter_core_crypto/flutter_core_crypto.dart';
+import 'package:flutter_feature_crypto/flutter_feature_crypto.dart';
 
 class ExampleCryptoUseCaseImpl extends ExampleCryptoUseCase {
   CryptoAESRepository cryptoAESRepository;
@@ -51,7 +51,7 @@ class ExampleCryptoUseCaseImpl extends ExampleCryptoUseCase {
   }
 
   @override
-  Future<CryptoKey> generateRSAKey() {
+  CryptoKey generateRSAKey() {
     return cryptoRSARepository.generateKey();
   }
 
@@ -61,7 +61,11 @@ class ExampleCryptoUseCaseImpl extends ExampleCryptoUseCase {
     required String plainText,
   }) {
     return cryptoRSARepository.encrypt(
-        encodedPublicKey: encodedPublicKey, plainText: plainText);
+      encoding: CoreCrytoRSAEncoding.pkcs1,
+      digest: CoreCryptoRSADigest.sha1,
+      encodedPublicKey: encodedPublicKey,
+      plainText: plainText,
+    );
   }
 
   @override
@@ -70,7 +74,11 @@ class ExampleCryptoUseCaseImpl extends ExampleCryptoUseCase {
     required String encryptedText,
   }) {
     return cryptoRSARepository.decrypt(
-        encodedPrivateKey: encodedPrivateKey, encryptedText: encryptedText);
+      encodedPrivateKey: encodedPrivateKey,
+      encryptedText: encryptedText,
+      encoding: CoreCrytoRSAEncoding.pkcs1,
+      digest: CoreCryptoRSADigest.sha1,
+    );
   }
 
   @override
@@ -83,6 +91,8 @@ class ExampleCryptoUseCaseImpl extends ExampleCryptoUseCase {
     final decryptedAESKey = cryptoRSARepository.decrypt(
       encodedPrivateKey: encodedRSAPrivateKey,
       encryptedText: encryptedAESKey,
+      encoding: CoreCrytoRSAEncoding.pkcs1,
+      digest: CoreCryptoRSADigest.sha1,
     );
     if (decryptedAESKey == null) {
       log("failed encryptRSAWithAES, decryptedAESKey is missing");
@@ -91,6 +101,8 @@ class ExampleCryptoUseCaseImpl extends ExampleCryptoUseCase {
     final decryptedIVKey = cryptoRSARepository.decrypt(
       encodedPrivateKey: encodedRSAPrivateKey,
       encryptedText: encryptedIVKey,
+      encoding: CoreCrytoRSAEncoding.pkcs1,
+      digest: CoreCryptoRSADigest.sha1,
     );
     if (decryptedIVKey == null) {
       log("failed encryptRSAWithAES, decryptedIVKey is missing");
@@ -113,6 +125,8 @@ class ExampleCryptoUseCaseImpl extends ExampleCryptoUseCase {
     final decryptedAESKey = cryptoRSARepository.decrypt(
       encodedPrivateKey: encodedRSAPrivateKey,
       encryptedText: encryptedAESKey,
+      encoding: CoreCrytoRSAEncoding.pkcs1,
+      digest: CoreCryptoRSADigest.sha1,
     );
     if (decryptedAESKey == null) {
       log("failed decryptRSAWithAES, decryptedAESKey is missing");
@@ -121,6 +135,8 @@ class ExampleCryptoUseCaseImpl extends ExampleCryptoUseCase {
     final decryptedIVKey = cryptoRSARepository.decrypt(
       encodedPrivateKey: encodedRSAPrivateKey,
       encryptedText: encryptedIVKey,
+      encoding: CoreCrytoRSAEncoding.pkcs1,
+      digest: CoreCryptoRSADigest.sha1,
     );
     if (decryptedIVKey == null) {
       log("failed decryptRSAWithAES, decryptedIVKey is missing");
@@ -138,8 +154,7 @@ class ExampleCryptoUseCaseImpl extends ExampleCryptoUseCase {
     required String encodedPrivateKey,
     required String plainText,
   }) {
-    return cryptoRSARepository.generateSignature(
-        encodedPrivateKey: encodedPrivateKey, plainText: plainText);
+    return cryptoRSARepository.generateSignature(encodedPrivateKey: encodedPrivateKey, plainText: plainText);
   }
 
   @override
@@ -173,12 +188,12 @@ class ExampleCryptoUseCaseImpl extends ExampleCryptoUseCase {
 
   @override
   bool verifyED25519Signature({
-    required String encodedPrivateKey,
+    required String encodedPublicKey,
     required String encodedSignature,
     required String plainText,
   }) {
     return cryptoED25519Repository.verifySignature(
-      encodedPrivateKey: encodedPrivateKey,
+      encodedPublicKey: encodedPublicKey,
       encodedSignature: encodedSignature,
       plainText: plainText,
     );

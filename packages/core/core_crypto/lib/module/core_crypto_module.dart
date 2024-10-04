@@ -1,5 +1,5 @@
 import 'package:core_config/core_config.dart';
-import 'package:flutter_core_crypto/flutter_core_crypto.dart';
+import 'package:flutter_feature_crypto/flutter_feature_crypto.dart';
 import 'package:get_it/get_it.dart';
 
 class CoreCryptoModule extends ClassModule {

@@ -1,4 +1,4 @@
-import 'package:flutter_core_crypto/flutter_core_crypto.dart';
+import 'package:flutter_feature_crypto/flutter_feature_crypto.dart';
 
 abstract class ExampleCryptoUseCase {
   /// AES Key Size must be 16/24/32
@@ -18,7 +18,7 @@ abstract class ExampleCryptoUseCase {
     required String encryptedText,
   });
 
-  Future<CryptoKey> generateRSAKey();
+  CryptoKey generateRSAKey();
 
   String? encryptRSA({
     required String encodedPublicKey,
@@ -63,7 +63,7 @@ abstract class ExampleCryptoUseCase {
   });
 
   bool verifyED25519Signature({
-    required String encodedPrivateKey,
+    required String encodedPublicKey,
     required String encodedSignature,
     required String plainText,
   });

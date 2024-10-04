@@ -2,7 +2,7 @@ import 'dart:developer';
 
 import 'package:app_example/domain/usecases/example_crypto_usecase.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_core_crypto/data/dto/model/crypto_key.dart';
+import 'package:flutter_feature_crypto/flutter_feature_crypto.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:logger/logger.dart';
 
@@ -183,7 +183,7 @@ class ExampleCryptoBloc extends Bloc<ExampleCryptoEvent, ExampleCryptoState> {
   Future<void> _onVerifyED25519Signature(
       _VerifyED25519Signature event, Emitter<ExampleCryptoState> emit) async {
     final isVerify = exampleCryptoUseCase.verifyED25519Signature(
-      encodedPrivateKey: state.ed25519Key!.privateKey,
+      encodedPublicKey: state.ed25519Key!.publicKey,
       encodedSignature: state.signatureED25519!,
       plainText: "TES_SIGNATURE_ED25518",
     );

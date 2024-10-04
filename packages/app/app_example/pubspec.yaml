@@ -14,17 +14,14 @@ dependencies:
   flutter_bloc: ^8.1.5
   freezed_annotation: ^2.4.1
   get: ^4.6.6
-  get_it: ^7.7.0
+  get_it: ^8.0.0
   json_annotation: ^4.8.1
   logger: ^2.2.0
 
   core_config:
     path: ../../core/core_config
 
-  flutter_core_crypto:
-    git:
-      url: https://github.com/fadlurahmanfdev/flutter_core_crypto
-      ref: 0.0.8
+  flutter_feature_crypto: ^0.0.4
 
 dev_dependencies:
   flutter_test:
