@@ -3,6 +3,7 @@ import 'package:app_example/module/index.dart';
 import 'package:app_example/presentation/crypto/example_crypto_screen.dart';
 import 'package:app_example/presentation/widget/feature_widget.dart';
 import 'package:core_config/core_config.dart';
+import 'package:core_config/shared/base_layout.dart';
 import 'package:flutter/material.dart';
 
 class ExampleFeaturesScreen extends StatefulWidget {
