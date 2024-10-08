@@ -2,26 +2,26 @@ import 'package:example_abc_auth/src/domain/usecase/examble_abc_auth_usecase.dar
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'create_password_bloc.freezed.dart';
+part 'activation_bloc.freezed.dart';
 
-part 'create_password_event.dart';
+part 'activation_event.dart';
 
-part 'create_password_state.dart';
+part 'activation_state.dart';
 
-class CreatePasswordBloc extends Bloc<CreatePasswordEvent, CreatePasswordState> {
+class ActivationBloc extends Bloc<ActivationEvent, ActivationState> {
   ExampleAbcAuthUseCase exampleAbcAuthUseCase;
 
-  CreatePasswordBloc({
+  ActivationBloc({
     required this.exampleAbcAuthUseCase,
-  }) : super(CreatePasswordState.initialize()) {
-    on<CreatePasswordEvent>((events, emit) async {
+  }) : super(ActivationState.initialize()) {
+    on<ActivationEvent>((events, emit) async {
       await events.map(
         process: (event) async => await _onProcess(event, emit),
       );
     });
   }
 
-  Future<void> _onProcess(_Process event, Emitter<CreatePasswordState> emit) async {
+  Future<void> _onProcess(_Process event, Emitter<ActivationState> emit) async {
     try {
       final res = await exampleAbcAuthUseCase.createPassword(password: event.password);
       res.fold(

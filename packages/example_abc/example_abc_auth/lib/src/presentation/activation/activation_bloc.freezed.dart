@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'create_password_bloc.dart';
+part of 'activation_bloc.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,7 +15,7 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
-mixin _$CreatePasswordEvent {
+mixin _$ActivationEvent {
   String get password => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
@@ -51,23 +51,23 @@ mixin _$CreatePasswordEvent {
       throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $CreatePasswordEventCopyWith<CreatePasswordEvent> get copyWith =>
+  $ActivationEventCopyWith<ActivationEvent> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $CreatePasswordEventCopyWith<$Res> {
-  factory $CreatePasswordEventCopyWith(
-          CreatePasswordEvent value, $Res Function(CreatePasswordEvent) then) =
-      _$CreatePasswordEventCopyWithImpl<$Res, CreatePasswordEvent>;
+abstract class $ActivationEventCopyWith<$Res> {
+  factory $ActivationEventCopyWith(
+          ActivationEvent value, $Res Function(ActivationEvent) then) =
+      _$ActivationEventCopyWithImpl<$Res, ActivationEvent>;
   @useResult
   $Res call({String password});
 }
 
 /// @nodoc
-class _$CreatePasswordEventCopyWithImpl<$Res, $Val extends CreatePasswordEvent>
-    implements $CreatePasswordEventCopyWith<$Res> {
-  _$CreatePasswordEventCopyWithImpl(this._value, this._then);
+class _$ActivationEventCopyWithImpl<$Res, $Val extends ActivationEvent>
+    implements $ActivationEventCopyWith<$Res> {
+  _$ActivationEventCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -90,7 +90,7 @@ class _$CreatePasswordEventCopyWithImpl<$Res, $Val extends CreatePasswordEvent>
 
 /// @nodoc
 abstract class _$$ProcessImplCopyWith<$Res>
-    implements $CreatePasswordEventCopyWith<$Res> {
+    implements $ActivationEventCopyWith<$Res> {
   factory _$$ProcessImplCopyWith(
           _$ProcessImpl value, $Res Function(_$ProcessImpl) then) =
       __$$ProcessImplCopyWithImpl<$Res>;
@@ -101,7 +101,7 @@ abstract class _$$ProcessImplCopyWith<$Res>
 
 /// @nodoc
 class __$$ProcessImplCopyWithImpl<$Res>
-    extends _$CreatePasswordEventCopyWithImpl<$Res, _$ProcessImpl>
+    extends _$ActivationEventCopyWithImpl<$Res, _$ProcessImpl>
     implements _$$ProcessImplCopyWith<$Res> {
   __$$ProcessImplCopyWithImpl(
       _$ProcessImpl _value, $Res Function(_$ProcessImpl) _then)
@@ -131,7 +131,7 @@ class _$ProcessImpl implements _Process {
 
   @override
   String toString() {
-    return 'CreatePasswordEvent.process(password: $password)';
+    return 'ActivationEvent.process(password: $password)';
   }
 
   @override
@@ -209,7 +209,7 @@ class _$ProcessImpl implements _Process {
   }
 }
 
-abstract class _Process implements CreatePasswordEvent {
+abstract class _Process implements ActivationEvent {
   const factory _Process({required final String password}) = _$ProcessImpl;
 
   @override
@@ -221,28 +221,28 @@ abstract class _Process implements CreatePasswordEvent {
 }
 
 /// @nodoc
-mixin _$CreatePasswordState {
-  CreatePasswordLocallyState get createPasswordState =>
+mixin _$ActivationState {
+  CreatePasswordState get createPasswordState =>
       throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $CreatePasswordStateCopyWith<CreatePasswordState> get copyWith =>
+  $ActivationStateCopyWith<ActivationState> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $CreatePasswordStateCopyWith<$Res> {
-  factory $CreatePasswordStateCopyWith(
-          CreatePasswordState value, $Res Function(CreatePasswordState) then) =
-      _$CreatePasswordStateCopyWithImpl<$Res, CreatePasswordState>;
+abstract class $ActivationStateCopyWith<$Res> {
+  factory $ActivationStateCopyWith(
+          ActivationState value, $Res Function(ActivationState) then) =
+      _$ActivationStateCopyWithImpl<$Res, ActivationState>;
   @useResult
-  $Res call({CreatePasswordLocallyState createPasswordState});
+  $Res call({CreatePasswordState createPasswordState});
 }
 
 /// @nodoc
-class _$CreatePasswordStateCopyWithImpl<$Res, $Val extends CreatePasswordState>
-    implements $CreatePasswordStateCopyWith<$Res> {
-  _$CreatePasswordStateCopyWithImpl(this._value, this._then);
+class _$ActivationStateCopyWithImpl<$Res, $Val extends ActivationState>
+    implements $ActivationStateCopyWith<$Res> {
+  _$ActivationStateCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -258,28 +258,28 @@ class _$CreatePasswordStateCopyWithImpl<$Res, $Val extends CreatePasswordState>
       createPasswordState: null == createPasswordState
           ? _value.createPasswordState
           : createPasswordState // ignore: cast_nullable_to_non_nullable
-              as CreatePasswordLocallyState,
+              as CreatePasswordState,
     ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$CreatePasswordStateImplCopyWith<$Res>
-    implements $CreatePasswordStateCopyWith<$Res> {
-  factory _$$CreatePasswordStateImplCopyWith(_$CreatePasswordStateImpl value,
-          $Res Function(_$CreatePasswordStateImpl) then) =
-      __$$CreatePasswordStateImplCopyWithImpl<$Res>;
+abstract class _$$ActivationStateImplCopyWith<$Res>
+    implements $ActivationStateCopyWith<$Res> {
+  factory _$$ActivationStateImplCopyWith(_$ActivationStateImpl value,
+          $Res Function(_$ActivationStateImpl) then) =
+      __$$ActivationStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({CreatePasswordLocallyState createPasswordState});
+  $Res call({CreatePasswordState createPasswordState});
 }
 
 /// @nodoc
-class __$$CreatePasswordStateImplCopyWithImpl<$Res>
-    extends _$CreatePasswordStateCopyWithImpl<$Res, _$CreatePasswordStateImpl>
-    implements _$$CreatePasswordStateImplCopyWith<$Res> {
-  __$$CreatePasswordStateImplCopyWithImpl(_$CreatePasswordStateImpl _value,
-      $Res Function(_$CreatePasswordStateImpl) _then)
+class __$$ActivationStateImplCopyWithImpl<$Res>
+    extends _$ActivationStateCopyWithImpl<$Res, _$ActivationStateImpl>
+    implements _$$ActivationStateImplCopyWith<$Res> {
+  __$$ActivationStateImplCopyWithImpl(
+      _$ActivationStateImpl _value, $Res Function(_$ActivationStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -287,33 +287,33 @@ class __$$CreatePasswordStateImplCopyWithImpl<$Res>
   $Res call({
     Object? createPasswordState = null,
   }) {
-    return _then(_$CreatePasswordStateImpl(
+    return _then(_$ActivationStateImpl(
       createPasswordState: null == createPasswordState
           ? _value.createPasswordState
           : createPasswordState // ignore: cast_nullable_to_non_nullable
-              as CreatePasswordLocallyState,
+              as CreatePasswordState,
     ));
   }
 }
 
 /// @nodoc
 
-class _$CreatePasswordStateImpl implements _CreatePasswordState {
-  const _$CreatePasswordStateImpl({required this.createPasswordState});
+class _$ActivationStateImpl implements _ActivationState {
+  const _$ActivationStateImpl({required this.createPasswordState});
 
   @override
-  final CreatePasswordLocallyState createPasswordState;
+  final CreatePasswordState createPasswordState;
 
   @override
   String toString() {
-    return 'CreatePasswordState(createPasswordState: $createPasswordState)';
+    return 'ActivationState(createPasswordState: $createPasswordState)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$CreatePasswordStateImpl &&
+            other is _$ActivationStateImpl &&
             (identical(other.createPasswordState, createPasswordState) ||
                 other.createPasswordState == createPasswordState));
   }
@@ -324,20 +324,20 @@ class _$CreatePasswordStateImpl implements _CreatePasswordState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$CreatePasswordStateImplCopyWith<_$CreatePasswordStateImpl> get copyWith =>
-      __$$CreatePasswordStateImplCopyWithImpl<_$CreatePasswordStateImpl>(
+  _$$ActivationStateImplCopyWith<_$ActivationStateImpl> get copyWith =>
+      __$$ActivationStateImplCopyWithImpl<_$ActivationStateImpl>(
           this, _$identity);
 }
 
-abstract class _CreatePasswordState implements CreatePasswordState {
-  const factory _CreatePasswordState(
-          {required final CreatePasswordLocallyState createPasswordState}) =
-      _$CreatePasswordStateImpl;
+abstract class _ActivationState implements ActivationState {
+  const factory _ActivationState(
+          {required final CreatePasswordState createPasswordState}) =
+      _$ActivationStateImpl;
 
   @override
-  CreatePasswordLocallyState get createPasswordState;
+  CreatePasswordState get createPasswordState;
   @override
   @JsonKey(ignore: true)
-  _$$CreatePasswordStateImplCopyWith<_$CreatePasswordStateImpl> get copyWith =>
+  _$$ActivationStateImplCopyWith<_$ActivationStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -2,8 +2,8 @@ import 'package:core_auth/core_auth.dart';
 import 'package:core_config/core_config.dart';
 import 'package:example_abc_auth/src/domain/usecase/examble_abc_auth_usecase.dart';
 import 'package:example_abc_auth/src/domain/usecase/example_abc_auth_usecase_impl.dart';
-import 'package:example_abc_auth/src/presentation/password/create_password_bloc.dart';
-import 'package:example_abc_auth/src/presentation/password/password_screen.dart';
+import 'package:example_abc_auth/src/presentation/activation/activation_bloc.dart';
+import 'package:example_abc_auth/src/presentation/activation/password_screen.dart';
 import 'package:example_abc_auth/src/presentation/splash/splash_screen.dart';
 import 'package:example_abc_storage/example_abc_storage.dart';
 import 'package:get_it/get_it.dart';
@@ -33,6 +33,6 @@ class ExampleAbcAuthModule extends ClassModule {
             coreAuthRepository: c.get<CoreAuthRepository>(),
             identityStorageRepository: c.get<IdentityStorageRepository>(),
           ))
-      ..registerFactory(() => CreatePasswordBloc(exampleAbcAuthUseCase: c.get<ExampleAbcAuthUseCase>()));
+      ..registerFactory(() => ActivationBloc(exampleAbcAuthUseCase: c.get<ExampleAbcAuthUseCase>()));
   }
 }
