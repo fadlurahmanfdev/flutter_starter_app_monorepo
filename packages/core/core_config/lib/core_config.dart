@@ -11,3 +11,7 @@ export 'shared/base_layout.dart';
 export 'shared/core_config_shared.dart';
 export 'shared/core_config_utility.dart';
 export 'shared/wrapper_state.dart';
+
+export 'package:flutter_bloc/flutter_bloc.dart' hide Transition;
+export 'package:freezed_annotation/freezed_annotation.dart';
+export 'package:get/get.dart';

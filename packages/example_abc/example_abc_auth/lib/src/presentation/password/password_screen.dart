@@ -1,11 +1,22 @@
-import 'package:flutter/cupertino.dart';
+import 'package:core_config/core_config.dart';
+import 'package:core_config/shared/context_extension.dart';
+import 'package:example_abc_auth/src/presentation/password/create_password_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-class CreatePasswordScreen extends StatefulWidget {
+class CreatePasswordScreen extends StatefulWidget with WrapperState {
   const CreatePasswordScreen({super.key});
 
   @override
   State<CreatePasswordScreen> createState() => _CreatePasswordScreenState();
+
+  @override
+  Widget wrap(BuildContext context) {
+    return BlocProvider(
+      create: (context) => context.get<CreatePasswordBloc>(),
+      child: this,
+    );
+  }
 }
 
 class _CreatePasswordScreenState extends State<CreatePasswordScreen> {
@@ -13,35 +24,61 @@ class _CreatePasswordScreenState extends State<CreatePasswordScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Create Password'),
-      ),
-      body: Container(
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-        child: Column(
-          children: [
-            Expanded(
-              child: Column(
-                children: [
-                  TextField(
-                    controller: passwordController,
-                    decoration: InputDecoration(
-                      hintText: 'Password',
-                      labelText: 'Password',
-                    ),
-                  )
-                ],
+    return MultiBlocListener(
+      listeners: [
+        BlocListener<CreatePasswordBloc, CreatePasswordState>(listener: (context, state) {
+          final createPasswordState = state.createPasswordState;
+          if (createPasswordState is CreatePasswordLocallySuccess) {
+            Get.showSnackbar(const GetSnackBar(
+              title: 'Successfully Create Password',
+              message: 'Successfully Create Password',
+              backgroundColor: Colors.green,
+            ));
+          } else if (createPasswordState is CreatePasswordLocallyFailed) {
+            Get.showSnackbar(const GetSnackBar(
+              title: 'Failed Create Password',
+              message: 'Failed Create Password',
+              backgroundColor: Colors.red,
+            ));
+          }
+        })
+      ],
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text('Create Password'),
+          elevation: 2.0,
+        ),
+        body: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+          child: Column(
+            children: [
+              Expanded(
+                child: Column(
+                  children: [
+                    TextField(
+                      controller: passwordController,
+                      decoration: const InputDecoration(
+                        hintText: 'Password',
+                        labelText: 'Password',
+                      ),
+                    )
+                  ],
+                ),
               ),
-            ),
-            SizedBox(
-              width: double.infinity,
-              child: ElevatedButton(
-                onPressed: () {},
-                child: Text('Buat Password'),
-              ),
-            )
-          ],
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () {
+                    FocusScope.of(context).unfocus();
+                    context
+                        .read<CreatePasswordBloc>()
+                        .add(CreatePasswordEvent.process(password: passwordController.text));
+                  },
+                  child: const Text('Buat Password'),
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );

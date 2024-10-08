@@ -17,7 +17,7 @@ class CoreAuthRepositoryImpl extends CoreAuthRepository {
   PasswordCreationTokenModel createPasswordCreationToken({required String password}) {
     final key = rsaRepository.generateKey();
     final aesKey = aesRepository.getKey(32);
-    final ivKey = aesRepository.getKey(32);
+    final ivKey = aesRepository.getIVKey();
     final encryptedToken = rsaRepository.encrypt(
       encodedPublicKey: key.publicKey,
       plainText: aesKey,
@@ -25,7 +25,7 @@ class CoreAuthRepositoryImpl extends CoreAuthRepository {
       digest: CoreCryptoRSADigest.sha1,
     );
     final ivToken = rsaRepository.encrypt(
-      encodedPublicKey: key.privateKey,
+      encodedPublicKey: key.publicKey,
       plainText: ivKey,
       encoding: CoreCrytoRSAEncoding.pkcs1,
       digest: CoreCryptoRSADigest.sha1,

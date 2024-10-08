@@ -1,3 +1,5 @@
+import 'package:dartz/dartz.dart';
+
 abstract class ExampleAbcAuthUseCase {
-  Future<void> createPassword({required String password});
+  Future<Either<Exception, bool>> createPassword({required String password});
 }
