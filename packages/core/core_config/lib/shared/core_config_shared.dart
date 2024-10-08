@@ -13,7 +13,7 @@ class CoreConfigShared {
 
   late GetIt getIt;
 
-  void setGetIt(GetIt c){
+  void setGetIt(GetIt c) {
     getIt = c;
   }
 
