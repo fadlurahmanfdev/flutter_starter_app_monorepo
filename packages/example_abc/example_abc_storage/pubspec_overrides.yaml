@@ -1,0 +1,4 @@
+# melos_managed_dependency_overrides: core_config
+dependency_overrides:
+  core_config:
+    path: ../../core/core_config

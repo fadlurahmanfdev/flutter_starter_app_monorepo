@@ -1,0 +1,8 @@
+# melos_managed_dependency_overrides: core_auth,core_config,example_abc_storage
+dependency_overrides:
+  core_auth:
+    path: ../../core/core_auth
+  core_config:
+    path: ../../core/core_config
+  example_abc_storage:
+    path: ../example_abc_storage
