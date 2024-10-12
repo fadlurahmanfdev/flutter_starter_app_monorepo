@@ -46,20 +46,42 @@ class CoreAuthRepositoryImpl extends CoreAuthRepository {
       privateKey: key.privateKey,
       publicKey: key.publicKey,
       passwordSignature: passwordSignature,
-      encryptedPassword: encryptedPassword,
     );
   }
 
   @override
   bool verifyPassword({
     required String password,
-    required String publicKeyToken,
+    required String publicKey,
     required String passwordSignature,
   }) {
     return rsaRepository.verifySignature(
-      encodedPublicKey: publicKeyToken,
+      encodedPublicKey: publicKey,
       encodedSignature: passwordSignature,
       plainText: password,
+    );
+  }
+
+  @override
+  String createPIN({required String privateKey, required String pin}) {
+    final signature = rsaRepository.generateSignature(
+      encodedPrivateKey: privateKey,
+      plainText: pin,
+    );
+    if (signature == null) throw Exception('SIGNATURE MISSING');
+    return signature;
+  }
+
+  @override
+  bool verifyPIN({
+    required String publicKey,
+    required String pinSignature,
+    required String pin,
+  }) {
+    return rsaRepository.verifySignature(
+      encodedPublicKey: publicKey,
+      encodedSignature: pinSignature,
+      plainText: pin,
     );
   }
 }

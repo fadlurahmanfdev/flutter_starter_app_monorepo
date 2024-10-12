@@ -4,19 +4,33 @@ part of 'activation_bloc.dart';
 class ActivationState with _$ActivationState {
   const factory ActivationState({
     required CreatePasswordState createPasswordState,
+    required CreatePINState createPINState,
   }) = _ActivationState;
 
   factory ActivationState.initialize() => ActivationState(
-        createPasswordState: CreatePasswordLocallyIdle(),
+        createPasswordState: CreatePasswordIdle(),
+        createPINState: CreatePINIdle(),
       );
 }
 
 abstract class CreatePasswordState {}
 
-class CreatePasswordLocallyIdle extends CreatePasswordState {}
+class CreatePasswordIdle extends CreatePasswordState {}
 
-class CreatePasswordLocallyLoading extends CreatePasswordState {}
+class CreatePasswordLoading extends CreatePasswordState {}
 
-class CreatePasswordLocallySuccess extends CreatePasswordState {}
+class CreatePasswordSuccess extends CreatePasswordState {}
 
-class CreatePasswordLocallyFailed extends CreatePasswordState {}
+class CreatePasswordAlreadyCreated extends CreatePasswordState {}
+
+class CreatePasswordFailed extends CreatePasswordState {}
+
+abstract class CreatePINState {}
+
+class CreatePINIdle extends CreatePINState {}
+
+class CreatePINLoading extends CreatePINState {}
+
+class CreatePINSuccess extends CreatePINState {}
+
+class CreatePINFailed extends CreatePINState {}

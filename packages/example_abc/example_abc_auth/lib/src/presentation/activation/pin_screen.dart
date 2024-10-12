@@ -3,47 +3,45 @@ import 'package:core_config/shared/context_extension.dart';
 import 'package:core_config/shared/navigator_utility.dart';
 import 'package:example_abc_auth/example_abc_auth.dart';
 import 'package:example_abc_auth/src/presentation/activation/activation_bloc.dart';
-import 'package:example_abc_auth/src/presentation/activation/pin_screen.dart';
+import 'package:example_abc_auth/src/presentation/activation/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class CreatePasswordScreen extends StatefulWidget with WrapperState {
-  const CreatePasswordScreen({super.key});
+class CreatePINScreen extends StatefulWidget with WrapperState {
+  const CreatePINScreen({super.key});
 
   @override
-  State<CreatePasswordScreen> createState() => _CreatePasswordScreenState();
+  State<CreatePINScreen> createState() => _CreatePINScreenState();
 
   @override
   Widget wrap(BuildContext context) {
     return BlocProvider(
-      create: (context) => context.get<ActivationBloc>()..add(const ActivationEvent.checkPassword()),
+      create: (context) => context.get<ActivationBloc>(),
       child: this,
     );
   }
 }
 
-class _CreatePasswordScreenState extends State<CreatePasswordScreen> {
-  final passwordController = TextEditingController();
+class _CreatePINScreenState extends State<CreatePINScreen> {
+  final pinController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return MultiBlocListener(
       listeners: [
         BlocListener<ActivationBloc, ActivationState>(listener: (context, state) {
-          final createPasswordState = state.createPasswordState;
-          if (createPasswordState is CreatePasswordAlreadyCreated) {
-            NavigatorUtility.I.push(ExampleAbcAuthRouteModule, CreatePINScreen);
-          } else if (createPasswordState is CreatePasswordSuccess) {
+          final createPINState = state.createPINState;
+          if (createPINState is CreatePINSuccess) {
             Get.showSnackbar(const GetSnackBar(
-              title: 'Successfully Create Password',
-              message: 'Successfully Create Password',
+              title: 'Successfully Create PIN',
+              message: 'Successfully Create PIN',
               backgroundColor: Colors.green,
             ));
-            NavigatorUtility.I.push(ExampleAbcAuthRouteModule, CreatePINScreen);
-          } else if (createPasswordState is CreatePasswordFailed) {
+            NavigatorUtility.I.push(ExampleAbcAuthRouteModule, LoginScreen);
+          } else if (createPINState is CreatePINFailed) {
             Get.showSnackbar(const GetSnackBar(
-              title: 'Failed Create Password',
-              message: 'Failed Create Password',
+              title: 'Failed Create PIN',
+              message: 'Failed Create PIN',
               backgroundColor: Colors.red,
             ));
           }
@@ -51,7 +49,7 @@ class _CreatePasswordScreenState extends State<CreatePasswordScreen> {
       ],
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Create Password'),
+          title: const Text('Create PIN'),
           elevation: 2.0,
         ),
         body: Container(
@@ -62,10 +60,12 @@ class _CreatePasswordScreenState extends State<CreatePasswordScreen> {
                 child: Column(
                   children: [
                     TextField(
-                      controller: passwordController,
+                      controller: pinController,
+                      maxLength: 6,
+                      keyboardType: TextInputType.number,
                       decoration: const InputDecoration(
-                        hintText: 'Password',
-                        labelText: 'Password',
+                        hintText: 'PIN',
+                        labelText: 'PIN',
                       ),
                     )
                   ],
@@ -76,11 +76,9 @@ class _CreatePasswordScreenState extends State<CreatePasswordScreen> {
                 child: ElevatedButton(
                   onPressed: () {
                     FocusScope.of(context).unfocus();
-                    context
-                        .read<ActivationBloc>()
-                        .add(ActivationEvent.createPassword(password: passwordController.text));
+                    context.read<ActivationBloc>().add(ActivationEvent.createPIN(pin: pinController.text));
                   },
-                  child: const Text('Buat Password'),
+                  child: const Text('Buat PIN'),
                 ),
               )
             ],

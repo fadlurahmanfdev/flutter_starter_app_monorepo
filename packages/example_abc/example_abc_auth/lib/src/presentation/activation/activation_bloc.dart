@@ -16,22 +16,53 @@ class ActivationBloc extends Bloc<ActivationEvent, ActivationState> {
   }) : super(ActivationState.initialize()) {
     on<ActivationEvent>((events, emit) async {
       await events.map(
-        process: (event) async => await _onProcess(event, emit),
+        checkPassword: (event) async => await _onCheckPassword(event, emit),
+        createPassword: (event) async => await _onCreatePassword(event, emit),
+        createPIN: (event) async => await _onCreatePIN(event, emit),
+        verifyPassword: (event) async => await _onVerifyPassword(event, emit),
       );
     });
   }
 
-  Future<void> _onProcess(_Process event, Emitter<ActivationState> emit) async {
+  Future<void> _onCheckPassword(_CheckPassword event, Emitter<ActivationState> emit) async {
+    final res = await exampleAbcAuthUseCase.isPasswordAlreadyCreated();
+    res.fold(
+      (l) {},
+      (isPasswordAlreadyCreated) {
+        if (isPasswordAlreadyCreated) {
+          emit(state.copyWith(createPasswordState: CreatePasswordAlreadyCreated()));
+        }
+      },
+    );
+  }
+
+  Future<void> _onCreatePassword(_CreatePassword event, Emitter<ActivationState> emit) async {
     try {
       final res = await exampleAbcAuthUseCase.createPassword(password: event.password);
       res.fold(
         (l) => throw l,
         (r) {
-          emit(state.copyWith(createPasswordState: CreatePasswordLocallySuccess()));
+          emit(state.copyWith(createPasswordState: CreatePasswordSuccess()));
         },
       );
     } catch (e) {
-      emit(state.copyWith(createPasswordState: CreatePasswordLocallyFailed()));
+      emit(state.copyWith(createPasswordState: CreatePasswordFailed()));
     }
   }
+
+  Future<void> _onCreatePIN(_CreatePIN event, Emitter<ActivationState> emit) async {
+    try {
+      final res = await exampleAbcAuthUseCase.createPIN(pin: event.pin);
+      res.fold(
+        (l) => throw l,
+        (r) {
+          emit(state.copyWith(createPasswordState: CreatePasswordSuccess()));
+        },
+      );
+    } catch (e) {
+      emit(state.copyWith(createPasswordState: CreatePasswordFailed()));
+    }
+  }
+
+  Future<void> _onVerifyPassword(_VerifyPassword event, Emitter<ActivationState> emit) async {}
 }

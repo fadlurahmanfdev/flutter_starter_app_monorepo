@@ -4,6 +4,7 @@ import 'package:example_abc_auth/src/domain/usecase/examble_abc_auth_usecase.dar
 import 'package:example_abc_auth/src/domain/usecase/example_abc_auth_usecase_impl.dart';
 import 'package:example_abc_auth/src/presentation/activation/activation_bloc.dart';
 import 'package:example_abc_auth/src/presentation/activation/password_screen.dart';
+import 'package:example_abc_auth/src/presentation/activation/pin_screen.dart';
 import 'package:example_abc_auth/src/presentation/splash/splash_screen.dart';
 import 'package:example_abc_storage/example_abc_storage.dart';
 import 'package:get_it/get_it.dart';
@@ -21,6 +22,11 @@ class ExampleAbcAuthRouteModule extends RouteModule {
           moduleType: ExampleAbcAuthRouteModule,
           screenType: CreatePasswordScreen,
           page: (context) => const CreatePasswordScreen().wrap(context),
+        ),
+        RouteModel(
+          moduleType: ExampleAbcAuthRouteModule,
+          screenType: CreatePINScreen,
+          page: (context) => const CreatePINScreen().wrap(context),
         ),
       ];
 }

@@ -3,7 +3,6 @@ class PasswordCreationTokenModel {
   final String ivToken;
   final String privateKey;
   final String publicKey;
-  final String encryptedPassword;
   final String passwordSignature;
 
   PasswordCreationTokenModel({
@@ -11,7 +10,6 @@ class PasswordCreationTokenModel {
     required this.ivToken,
     required this.privateKey,
     required this.publicKey,
-    required this.encryptedPassword,
     required this.passwordSignature,
   });
 }

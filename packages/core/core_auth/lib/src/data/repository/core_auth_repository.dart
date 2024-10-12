@@ -7,7 +7,15 @@ abstract class CoreAuthRepository {
 
   bool verifyPassword({
     required String password,
-    required String publicKeyToken,
+    required String publicKey,
     required String passwordSignature,
+  });
+
+  String createPIN({required String privateKey, required String pin});
+
+  bool verifyPIN({
+    required String publicKey,
+    required String pinSignature,
+    required String pin,
   });
 }
